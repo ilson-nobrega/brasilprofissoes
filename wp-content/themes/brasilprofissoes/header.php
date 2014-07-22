@@ -56,7 +56,7 @@
 		</div>
 		<nav>
 			<div class="menu container">
-				<a class="menu-home" href="http://localhost/brasilprofissoeswp" title="home"><img src="http://localhost/brasilprofissoeswp/wp-content/themes/brasilprofissoes/img/link_home.jpg" alt="Home" title="Home"></a>
+				<a class="menu-home" href="http://localhost/brasilprofissoeswp" title="home"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/link_home.jpg" alt="Home" title="Home"></a>
 				<?php
 		            wp_nav_menu( array(
 		                'menu'              => 'primary',
