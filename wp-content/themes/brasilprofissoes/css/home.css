@@ -4,5 +4,25 @@
 
 .carreira img:hover{
 	opacity: 0.6;
-
 }
+
+.intituicoes .encontrar_vagas{
+	height: 285px;
+	background-color: #f9be32;
+}
+
+
+.intituicoes .encontrar_vagas h1{
+	text-align: center;
+	color: #FFF;
+	font-size: 40px;
+	padding-top: 55px;
+	margin: 0;
+}
+
+.intituicoes .carousel-parceiros{
+	height: 285px;
+	background-color: #ededed;
+	
+}
+
