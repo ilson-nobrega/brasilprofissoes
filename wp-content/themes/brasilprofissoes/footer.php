@@ -82,7 +82,7 @@
 		</div>
 
         <div id="rodape">
-			<p id="copy" class="text-center">© Copyright <?php echo date(Y) ?> - Todos os Direitos Reservados. Brasil Profissões <a href="http://www.tekan.com.br" title="Tekan Marketing" id="tekan"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/logo_tekan.png" alt="tekan"></a></p>
+			<p id="copy" class="text-center">© Copyright <?php echo date(Y) ?> - Todos os Direitos Reservados. Brasil Profissões.</a></p>
 		</div>
     </footer>
   </body>
