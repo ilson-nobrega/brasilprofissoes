@@ -21,6 +21,13 @@
 	#news input {
 		height: 38px;
 	}
+	.parceiro-info {
+		padding-top: 0px;
+		height: 254px;
+	}
+	.noti-posts img {
+		height: 168px;
+	}
 	header #link_redes, .acessibilidade {
 		display: none;
 	}
@@ -59,8 +66,17 @@
 	.noti-posts h3 {
 		font-size: 16px;
 	}
+	.parceiro-logo {
+		padding: 10px 0;
+	}
+	.parceiro-info {
+		height: 196px;
+	}
+	.parceiro-info h3, .parceiro-info a {
+		font-size: 100%;
+	}
 	#logo_rodape, .siga br, .area, .ad-home-noti {
-	display: none;
+		display: none;
 	}
 }
 @media (max-width: 767px) {
@@ -68,6 +84,7 @@
 		height: inherit;
 		padding-bottom: 15px;
 	}
+
 	#redes_sociais {
 		display: none;
 	}
