@@ -6,7 +6,7 @@ Version: 1.0
 */
 
 @import url("../brasilprofissoes/fontes/fontes.css");
-
+@import url("../brasilprofissoes/css/home.css");
 
 .gray {
 	background: #ccc;
@@ -134,7 +134,7 @@ header input[type=search] {
 }
 
 .menu {
-	background: #2a7355;
+	background: #2bb673;
 	border-top: 4px solid #2a7355;
 	height: 72px;
 	padding: 0 !important;
@@ -145,7 +145,6 @@ header input[type=search] {
 	z-index: 99999;
 }
 .navbar-nav {
-	background-color: #2bb673;
 	height: 68px;
 	margin-left: 84px;
 }
@@ -177,6 +176,8 @@ nav #link_redes {
 	width: 300px;
 	text-align: right;
 	float: right;
+	background: #2a7355;
+	height: 68px;
 }
 nav .fa {
 	color: #fff;
@@ -415,6 +416,27 @@ button {
 .parceiro span::after {
 	content: url(img/seta_menu_white.png);
 	position: absolute;
+}
+.parceiro-logo {
+	padding: 30px 0;
+}
+.parceiro-logo img {
+	margin: 0 auto;
+}
+.parceiro-info {
+	background: #e3e3e3;
+	display: inline-block;
+	width: 100%;
+	height: 392px;
+	text-align: center;
+	padding-top: 60px;
+}
+.parceiro-info a {
+	font-size: 21px;
+	text-transform: uppercase;
+	border-top: 1px solid #428bca;
+	padding-top: 5px;
+	margin-top: 5px;
 }
 /*============================================ Internas = PARCEIROS fim ==================================================*/
 
