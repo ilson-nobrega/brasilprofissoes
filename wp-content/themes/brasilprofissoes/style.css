@@ -6,7 +6,7 @@ Version: 1.0
 */
 
 @import url("../brasilprofissoes/fontes/fontes.css");
-
+@import url("../brasilprofissoes/css/home.css");
 
 .gray {
 	background: #ccc;
