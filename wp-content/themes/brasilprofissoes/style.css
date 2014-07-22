@@ -1,0 +1,421 @@
+/*
+Theme Name: Brasil Profissões
+Description: Template exclusivo para o portal Brasil Profissões desenvolvido pela Tekan Marketing http://www.tekan.com.br/.
+Author: Wesley, Ilson e Alexandre
+Version: 1.0
+*/
+
+@import url("../brasilprofissoes/fontes/fontes.css");
+
+
+.gray {
+	background: #ccc;
+}
+body {
+	font-family: Gotham-Medium;
+}
+.pad-y {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.nopad {
+   padding: 0 !important;
+}
+.nopad-right {
+   padding-right: 0 !important;
+}
+.nopad-left {
+   padding-left: 0 !important;
+}
+.clearfix::after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+h1, h2, h3, h4,
+h1 a, h2 a, h3 a, h4 a {
+	color: #5b5b5a;
+	font-family: Gotham-Bold;
+}
+.data {
+	margin-top: 10px;
+}
+/*============================================== Header =========================================================*/
+.area-pad {
+	margin: 10px 10px 10px 0;
+}
+.area-pad a {
+	color: #fff;
+}
+.area {
+	background:#0d6cac; 
+	padding: 5px 0;
+	color: #FFF; 
+	width: 120px;
+	text-align: center; 
+	font-size: 15px;
+	font-family: Gotham-Bold;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	float: left;
+}
+.acessibilidade {
+	font-family: Gotham-Bold;
+	color: #FFF; 
+}
+.buscanosite.col-lg-3 {
+	width: 280px;
+}
+header form {
+	float: left;
+}
+header form i {
+	display: block;
+	float: left;
+	padding: 12px;
+	background: #febe31;
+}
+header form input {
+	display: block;
+	float: left;
+	border: none;
+	padding: 15px;
+	outline: none;
+	width: 178px;
+}
+header form .area-mail {
+	content: url(img/ico_login.jpg);
+	padding: 12px 12px 13px;
+	border-radius: 10px 0 0 10px;
+	-moz-border-radius: 10px 0 0 10px;
+	-webkit-border-radius: 10px 0 0 10px;
+}
+header form .area-pass {
+	content: url(img/ico_login_senha.jpg);
+	padding: 14px 14px 15px;
+}
+header form .area-search2 {
+	background: #febe31 url(img/ico_seta_login.jpg) no-repeat center;
+	display: block;
+	width: 21px;
+	height: 27px;
+	border: none;
+	padding: 25px;
+	border-radius: 0 10px 10px 0;
+	-moz-border-radius: 0 10px 10px 0;
+	-webkit-border-radius: 0 10px 10px 0;
+}
+.areaexclusiva {
+	height: 77px;
+	background-color: #2bb673;
+	border-top: 5px #febe31 solid;
+}
+header input[type=search] {
+	width: 100%;
+	position: relative;
+	border: none;
+	height: 72px;
+	padding: 0 15px;
+	float: left;
+	outline: none;
+}
+.area-search {
+	position: absolute;
+	right: 0;
+	border: 0;
+	padding: 0;
+	outline: none;
+}
+.area-search img {
+	height: 72px;
+}
+
+.menu {
+	background: #2a7355;
+	border-top: 4px solid #2a7355;
+	height: 72px;
+	padding: 0 !important;
+}
+.menu-home {
+	float: left;
+	position: absolute;
+	z-index: 99999;
+}
+.navbar-nav {
+	background-color: #2bb673;
+	height: 68px;
+	margin-left: 84px;
+}
+.navbar-nav>li {
+	padding: 9px 0;
+}
+.navbar-nav>li.open a {
+	background: transparent !important;
+}
+.navbar-nav>li:hover {
+	background-color: #2a7355;
+}
+.navbar-nav>li>a {
+	list-style-type: none;
+	display: block;
+	font-size:12px;
+	color:#FFF;
+	font-family:"Gotham Bold";
+	text-transform: uppercase;
+	outline: none;
+	text-align: center;
+	max-width: 184px;
+}
+.navbar-nav>li>a:hover, .navbar-nav>li>a:focus {
+	background-color: transparent;
+}
+nav #link_redes {
+	margin: 0;
+	width: 300px;
+	text-align: right;
+	float: right;
+}
+nav .fa {
+	color: #fff;
+	padding: 20px 16px;
+	margin-left: -4px;
+	border-left: 1px solid rgba(255, 255, 255, 0.1);
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav .fa-google-plus {
+	border-left: 0;
+}
+.menu-item-43 a {
+	padding: 5px 10px !important;
+}
+/*.dropdown:hover .dropdown-menu { display: block; }
+*/.dropdown #drop1:after {
+	content: url(img/seta_menu.png);
+	float: right;
+	width: 19px;
+	height: 19px;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.dropdown.open #drop1:after {
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+/*============================================== Header FIM =========================================================*/
+
+/*============================================== Footer =========================================================*/
+#redes_busca {
+	width: 100%;
+	height: 156px;
+	background: #51a3d5;
+	background: -moz-linear-gradient(left, #51a3d5 0%, #51a3d5 40%, #5b5b5b 49%, #5b5b5b 49%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#51a3d5), color-stop(49%,#51a3d5), color-stop(49%,#5b5b5b), color-stop(100%,#5b5b5b));
+	background: -webkit-linear-gradient(left, #51a3d5 0%,#51a3d5 49%,#5b5b5b 49%,#5b5b5b 100%);
+	background: -o-linear-gradient(left, #51a3d5 0%,#51a3d5 49%,#5b5b5b 49%,#5b5b5b 100%);
+	background: -ms-linear-gradient(left, #51a3d5 0%,#51a3d5 49%,#5b5b5b 49%,#5b5b5b 100%);
+	background: linear-gradient(to right, #51a3d5 0%,#51a3d5 49%,#5b5b5b 49%,#5b5b5b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#51a3d5', endColorstr='#5b5b5b',GradientType=1 );
+}
+#redes_sociais {
+	display: block;
+	height: 156px;
+	background: #51a3d5;
+}
+#busca_rodape {
+	display: block;
+	height: 156px;
+	background: #5b5b5b;
+}
+#busca_rodape form {
+	width: 480px;
+	position: relative;
+	float: right;
+	top: 20px;
+}
+#busca_rodape label {
+	font-size: 36px;
+	color: #FFF;
+	font-family: Gotham-Bold;
+}
+#busca_rodape input {
+	width: 90%;
+	height: 51px;
+	border: 0;
+	font-family: "Droid Serif";
+	float: left;
+}
+#busca_rodape button {
+	width: 10%;
+	height: 51px;
+	border: 0;
+	background-color: #f9be32;
+	position: relative;
+	float: left;
+}
+.siga {
+	float: left;
+	font-family: Gotham-Bold;
+	color: #fff;
+	font-size: 26px;
+	line-height: 30px;
+	margin-top: 30px;
+}
+#link_redes {
+	width: 320px;
+	height: 50px;
+	float: right;
+	margin-top: 55px;
+}
+footer #link_redes a {
+	text-decoration: none;
+	color: #FFF;
+	cursor: pointer;
+	margin-left: 15px;
+}
+dl {
+	font-size: 15px;
+	font-family: Gotham-Bold;
+	color: #5b5b5a;
+	height: 300px;
+}
+dt {
+	font-size: 25px;
+}
+dl a {
+	text-decoration: none;
+	color: #5b5b5a;
+}
+dl a:hover {
+	color: #777777;
+}
+#news {
+	font-family: Gotham-Bold;
+	color: #5b5b5a;
+	background-color: #dbdcdc;
+	padding: 0 30px;
+	margin: 0;
+}
+#news input {
+	width: 100%;
+	height: 50px;
+	border: 0;
+	margin-top: 5px;
+	font-family: "Droid Serif";
+}
+#news button {
+	border: 0;
+	margin: 10px 0;
+	float: right;
+	padding: 0;
+}
+.sitemap {
+	border-right: 1px solid #ededed;
+	margin: 0;
+	padding-top: 20px; 
+}
+#rodape {
+	height: 55px;
+	background-color: #222121;
+	color: #FFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*============================================== Footer FIM =========================================================*/
+
+/*============================================== HOME =============================================================*/
+.noticiasboxes {
+	background: #f3f3f3;
+}
+.noti-posts {
+	border: 1px solid #bebdbd;
+	margin: 15px 0;
+	padding-top: 15px !important;
+	padding-bottom: 15px !important;
+}
+.noti-posts img {
+	width: 100%;
+	height: 216px;
+	border: 1px solid #bebdbd;
+}
+.noti-posts h3 {
+	margin-top: 10px;
+}
+.noti-posts article {
+	padding-bottom: 15px;
+	min-height: 370px;
+}
+/*============================================== HOME FIM =========================================================*/
+
+/*============================================== Transições =========================================================*/
+.fa, .navbar-nav>li, 
+#imagens_carreira img, 
+.menu_guia a, 
+.carro_um a, 
+.carro_dois a, 
+#imagens_destaque img, 
+.readmore, 
+.dropdown.open #drop1:after, 
+.dropdown #drop1:after, 
+.parceiro img, .parceiro span, 
+button {
+	-webkit-transition:	all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+.readmore:hover, button:hover, .fa:hover, 
+.carro_um a:hover, .carro_dois a:hover, 
+#imagens_carreira img:hover, 
+#imagens_destaque img:hover, 
+#redes_sociais img:hover {
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+/*============================================ Internas = PARCEIROS ==================================================*/
+.parceiros article.col-md-3 {
+	padding: 0 5px 10px;
+	position: relative;
+}
+.parceiro div {
+	background: #3876a3;
+}
+.parceiro img {
+	opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+.parceiro:hover span {
+	color: #fff;
+	background: #3876a3;
+}
+.parceiro:hover img {
+	opacity: 1;
+}
+.parceiro span {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+	bottom: 50px;
+	width: 106px;
+	font-weight: bold;
+	background: #febe31;
+	padding: 10px 15px 10px 0;
+	margin-left: -53px;
+	text-align: center;
+	border-radius: 10px;
+}
+.parceiro span::after {
+	content: url(img/seta_menu_white.png);
+	position: absolute;
+}
+/*============================================ Internas = PARCEIROS fim ==================================================*/
+
+@import url("../brasilprofissoes/css/mediaquery.css");

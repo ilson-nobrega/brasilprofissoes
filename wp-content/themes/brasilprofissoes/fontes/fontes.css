@@ -1,0 +1,39 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+@font-face{
+	font-family:Gotham-Bold;
+	src:url(Gotham-Bold.otf);
+}
+
+@font-face{
+	font-family:Gotham Bold;
+	src:url(Gotham-Bold.otf);
+}
+
+
+@font-face{
+	font-family:Gotham-Medium;
+	src:url(GothamNarrow-Medium.otf);
+}
+
+@font-face{
+	font-family:Gotham-Light;
+	src:url(gotham-light.otf);
+}
+
+@font-face{
+	font-family:Droid Serif;	
+	src:url(DroidSerif.ttf);
+}
+
+@font-face {
+	font-family:"BandaRegular";
+	src:url(regular.eot?) format("eot"),
+		url(regular.woff) format("woff"),
+		url(regular.ttf) format("truetype"),
+		url(regular.svg#BandaRegular) format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+

@@ -1,0 +1,85 @@
+@media (max-width: 1279px) {
+	#busca_rodape form {
+		width: 330px;
+	}
+	#link_redes {
+		width: 250px;
+		margin-top: 60px;
+		font-size: 10px;
+	}
+	.nav > li > a {
+		padding: 15px 14px;
+	}
+	header form input {
+		padding: 17px 8px;
+		width: 97px;
+		font-size: 11px;
+	}
+	.siga {
+		font-size: 22px;
+	}
+	#news input {
+		height: 38px;
+	}
+	header #link_redes, .acessibilidade {
+		display: none;
+	}
+}
+@media (max-width: 991px) {
+	dl {
+		height: 240px;
+	}
+	.nav > li > a {
+		padding: 15px 5px;
+		font-size: 11px;
+	}
+	#news input {
+		height: 34px;
+	}
+	#news button {
+		margin: 5px 0;
+	}
+	#busca_rodape form {
+		width: 100%;
+	}
+	#link_redes {
+		margin-top: 0;
+		width: 310px;
+		float: left;
+	}
+	#link_redes .fa-google-plus {
+		margin-left: 0;
+	}
+	.noti-posts article {
+		min-height: 310px;
+	}
+	.noti-posts img {
+		height: 153px;
+	}
+	.noti-posts h3 {
+		font-size: 16px;
+	}
+	#logo_rodape, .siga br, .area, .ad-home-noti {
+	display: none;
+	}
+}
+@media (max-width: 767px) {
+	.areaexclusiva {
+		height: inherit;
+		padding-bottom: 15px;
+	}
+	#redes_sociais {
+		display: none;
+	}
+	header form input {
+		width: inherit;
+	}
+}
+@media (max-width: 600px) {
+	#news p {
+		font-size: 12px;
+	}
+	.areaexclusiva, #copy img {
+		display: none;
+	}
+}
