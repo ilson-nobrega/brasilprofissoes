@@ -1,3 +1,5 @@
+
+/*==================================== Carrreira ====================================*/
 .carreira h1{
 	text-align: center;
 }
@@ -11,21 +13,7 @@
 	background-color: #f9be32;
 }
 
-
-.intituicoes .encontrar_vagas h1{
-	text-align: center;
-	color: #FFF;
-	font-size: 40px;
-	padding-top: 55px;
-	margin: 0;
-}
-
-.intituicoes .carousel-parceiros{
-	height: 285px;
-	background-color: #ededed;
-	
-}
-
+/*==================================== Caminhos fruturos ====================================*/
 .caminhos_futuros .enquete{
 	height: 284px;
 	background-color: #ececec;
@@ -60,6 +48,22 @@ padding: 0;
 
 }
 
+/*==================================== Instituições ====================================*/
+.intituicoes .encontrar_vagas h1{
+	text-align: center;
+	color: #FFF;
+	font-size: 40px;
+	padding-top: 55px;
+	margin: 0;
+}
+
+.intituicoes .carousel-parceiros{
+	height: 285px;
+	background-color: #ededed;
+	
+}
+
+/*==================================== Busca de Cursos ====================================*/
 .busca_cursos .col-titulo{
 	height: 170px;
 	background-color: #2bb673;
@@ -69,11 +73,56 @@ padding: 0;
 .busca_cursos .col-form{
 	height: 170px;
 	background-color: #fabe32;
+	padding: 10px;
+}
+
+.busca_cursos .titulo_cursos h1{
+	text-align: center;
+	color: #fff;
+	padding-top: 15px;
+	font-size: 40px;
+}
+
+.busca_cursos .form_cursos input,.busca_cursos .form_cursos select{
+	height: 50px;
+	border: 0;
+	font-family: webkit-small-control;
 }
 
 
+.busca_cursos ul{
+	padding: 0;
+	margin: 0;
+}
+.busca_cursos ul li{
+	display: block;
+	list-style: none;
+}
+	
 
+.busca_cursos .form_cursos button{
+	border: none;
+	background-color: #fabe32;
 
+}
+
+li.select_estado{
+	padding-top: 65px;
+}
+
+.busca_cursos .ico_msg{
+	list-style-image:url('../img/msg_ico.jpg') ;
+	display: list-item;
+	padding-top: 8px;
+}
+
+.busca_cursos .ico_msg a{
+
+}
+
+.busca_cursos .ul_link{
+padding-left: 50px;
+}
 
 
 

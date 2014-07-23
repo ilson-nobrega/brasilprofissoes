@@ -74,11 +74,32 @@
 				
 				<div class="col-md-6 col-titulo">
 					<div class="titulo_cursos">
-					
+						<h1><p>Busque entre mais</p> <p>de 1000 cursos:</p></h1>
 					</div>	
 				</div>
 				<div class="col-md-6 col-form">
 					<div class="form_cursos">
+						<form action="" method="post">
+							<ul>
+							<li>
+								<input type="text" name="curso" class="curso col-md-12" placeholder="digite o curso ou tema desejado">
+							</li>
+							<li class="select_estado">
+								<label for="estado_curso" class="col-md-2 pad-y">Buscar em:</label>
+								<select name="estado" id="estado_curso" class="estado_curso col-md-5">
+									<option value="">Distrito Federal</option>
+									<option value="">São Paulo</option>
+									<option value="">Rio de Janeiro</option>
+								</select>
+							</li>
+							<li class="text-right">
+								<button type="submit"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_buscar.jpg"></button>
+							</li>	
+							</ul>
+						</form>
+						<ul class="col-md-11 ul_link">
+						<li class="ico_msg "><a href="#">Receba Grátis em seu email um aviso sobre cursos</a></li>
+						</ul>
 					</div>
 				</div>
 			
