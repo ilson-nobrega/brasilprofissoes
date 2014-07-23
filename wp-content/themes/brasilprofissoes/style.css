@@ -113,15 +113,6 @@ header form .area-search2 {
 	background-color: #2bb673;
 	border-top: 5px #febe31 solid;
 }
-header input[type=search] {
-	width: 100%;
-	position: relative;
-	border: none;
-	height: 72px;
-	padding: 0 15px;
-	float: left;
-	outline: none;
-}
 .area-search {
 	position: absolute;
 	right: 0;
@@ -354,6 +345,28 @@ dl a:hover {
 	min-height: 370px;
 }
 /*============================================== HOME FIM =========================================================*/
+
+/*============================================== Pesquisa =========================================================*/
+.novapesquisa form {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.novapesquisa input {
+	width: 90%;
+}
+.searchform input {
+	width: 100%;
+	position: relative;
+	border: none;
+	height: 72px;
+	padding: 0 15px;
+	float: left;
+	outline: none;
+}
+.novapesquisa .searchform input {
+	border: 1px solid #ccc;
+}
+/*============================================== Pesquisa FIM =========================================================*/
 
 /*============================================== Transições =========================================================*/
 .fa, .navbar-nav>li, 
