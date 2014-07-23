@@ -75,7 +75,7 @@
 	.parceiro-info h3, .parceiro-info a {
 		font-size: 100%;
 	}
-	#logo_rodape, .siga br, .area, .ad-home-noti {
+	#logo_rodape, .siga br, .area, .ad-home-noti, .publicidade {
 		display: none;
 	}
 }

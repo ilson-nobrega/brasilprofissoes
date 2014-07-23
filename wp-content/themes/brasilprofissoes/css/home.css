@@ -124,6 +124,26 @@ li.select_estado{
 padding-left: 50px;
 }
 
+/*==================================== Cursos em destaque ====================================*/
+
+.cursos_destaque img:hover {
+	opacity: 0.6;
+}
+
+/*==================================== Noticias ====================================*/
+
+.noticias .ultimas_noticias h1,
+.noticias .ultimas_noticias h3,
+.noticias .mais_lidas h1,
+.noticias .mais_lidas h3,
+.noticias .publicidade h3{
+	text-align: center;
+}
 
 
+.noticias .ultimas_noticias .container_noticias,.noticias .mais_lidas .container_noticias{
+	height: 310px;	
+	background-color: #ededed;
+	border: 2px solid #dddcdc;
+}
 
