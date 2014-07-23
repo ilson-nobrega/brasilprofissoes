@@ -30,12 +30,12 @@
 	            'menu_icon' 	=> 'dashicons-businessman',
 	            'menu_position' => 51,
 	            'has_archive'	=> true,
-	            'rewrite'       => array('slug' => 'profissoes'),
+	            'rewrite'       => array('slug' => 'profissao'),
 	            'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields'),
 	            'taxonomies'    => array('post_tag')
 		    );
 		    
-			register_post_type('profissoes', $args);
+			register_post_type('profissao', $args);
 		}
 
 	/**
@@ -43,18 +43,20 @@
 	 */
 		function cria_taxonomy_profissoes(){
 			
-			register_taxonomy(
-				'profissoes',
-				'profissoes',
-				array(
-				    'labels'    => array(
-    					'name'             =>  __('Categorias de Profissões'),
-    					'singular_name'    =>  __('Categoria de Profissões')
-				    ),
-				'rewrite'       =>  array('slug' => 'categoria-de-profissoes'),
-				'hierarchical'  => true
-				)
-			);
+		    //Seta as labels da taxonomia
+		    $labels = array(
+	            'name'             =>  __('Categorias de Profissões'),
+	            'singular_name'    =>  __('Categoria de Profissões')
+		    );
+		    
+		    //Seta os argumentos da taxonomia
+			$args = array(
+				    'labels'       => $labels,
+				    'rewrite'       =>  array('slug' => 'categoria-de-profissoes'),
+				    'hierarchical'  => true
+		    );
+			
+			register_taxonomy('profissoes',	'profissao', $args);
 		}
 		
 	/**
