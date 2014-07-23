@@ -455,7 +455,7 @@ button {
 }
 
 /*============================================ Internas = Noticias ==================================================*/
-.mais-lidas ol {
+.mais-lidas ul {
 	counter-reset: li;
 	padding: 0;
 }

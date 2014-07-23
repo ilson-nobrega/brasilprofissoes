@@ -54,14 +54,7 @@
                         </div>
                         <div class="col-md-3 nopad">
                             <div class="mais-lidas">
-                                <h3>Mais lidas</h3>
-                                <ol>
-                                    <li><a href="noticia.php">Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing.</a></li>
-                                    <li><a href="noticia.php">Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing.</a></li>
-                                    <li><a href="noticia.php">Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing.</a></li>
-                                    <li><a href="noticia.php">Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing.</a></li>
-                                    <li><a href="noticia.php">Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing.</a></li>
-                                </ol>
+                                <?php dynamic_sidebar( 'maislidas' ); ?>
                             </div>
                         </div>
                     </div>
