@@ -34,11 +34,11 @@
         	<div class="row">
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>O Portal</dt>
-					<dd><a href="#">Quem somos</a></dd>
-					<dd><a href="#">Responsabilidade Social</a></dd>
-					<dd><a href="#">Fale Conosco</a></dd>
-					<dd><a href="">Publicidade</a></dd>
-					<dd><a href="#">Termos e Política</a></dd>
+					<dd><a href="http://localhost/brasilprofissoes/?page_id=11">Quem somos</a></dd>
+					<dd><a href="http://localhost/brasilprofissoes/?page_id=13">Responsabilidade Social</a></dd>
+					<dd><a href="http://localhost/brasilprofissoes/?page_id=15">Fale Conosco</a></dd>
+					<dd><a href="http://localhost/brasilprofissoes/?page_id=18">Publicidade</a></dd>
+					<dd><a href="http://localhost/brasilprofissoes/?page_id=20">Termos e Política</a></dd>
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Profissões</dt>
