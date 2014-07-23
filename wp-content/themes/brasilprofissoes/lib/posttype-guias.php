@@ -13,10 +13,10 @@
                 ),
                     'public' 		=> true,
                     'menu_icon' 	=> 'dashicons-welcome-write-blog',
-                    'menu_position' => 33,
+                    'menu_position' => 53,
                     'has_archive'	=> true,
                     'rewrite'       => array('slug' => 'guias'),
-                    'supports'      => array('title', 'editor', 'thumbnail'),
+                    'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields', 'post-formats'),
                     'taxonomies'    => array('post_tag')
                 )
             );
@@ -29,7 +29,7 @@
 		function cria_taxonomy_guias(){
 			
 			register_taxonomy(
-				'tipos_de_guias',
+				'guias',
 				'guias',
 				array(
 				    'labels'    => array(
