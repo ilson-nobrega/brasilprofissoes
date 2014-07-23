@@ -26,3 +26,55 @@
 	
 }
 
+.caminhos_futuros .enquete{
+	height: 284px;
+	background-color: #ececec;
+	padding: 10px;
+}
+
+.caminhos_futuros .enquete h3{
+	margin: 0;
+
+}
+
+
+.caminhos_futuros .enquete .form_enquete label{
+	font-size: 18px;
+	padding-left: 10px;
+	color: #5b5b5a;
+}
+
+.caminhos_futuros .enquete .form_enquete ul{
+padding: 0;
+	margin: 0;
+}
+.caminhos_futuros .enquete .form_enquete ul li{
+	display: block;
+	padding-top: 10px;
+	
+}
+
+.caminhos_futuros .enquete .form_enquete ul li button{
+	border: none;
+	background-color: #ececec;
+
+}
+
+.busca_cursos .col-titulo{
+	height: 170px;
+	background-color: #2bb673;
+	
+}
+
+.busca_cursos .col-form{
+	height: 170px;
+	background-color: #fabe32;
+}
+
+
+
+
+
+
+
+
