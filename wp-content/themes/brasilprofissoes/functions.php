@@ -16,6 +16,9 @@
 		
 		//Editor Customizado
 		require_once 'lib/custom_editor.php';
+
+		//Paginação nas noticias
+		require_once 'lib/paginacao.php';
 	
 	
 	/**

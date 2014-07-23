@@ -17,6 +17,9 @@ body {
 p {
 	font-family: Gotham-Light;
 }
+ul, ol {
+	list-style-type: none;
+}
 .pad-y {
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -42,6 +45,40 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .data {
 	margin-top: 10px;
+}
+ul.page-numbers {
+	margin: 20px 0 10px;
+	width: 100%;
+	padding: 0;
+	font-size: 12px;
+	line-height: normal;
+	clear: both;
+	float: left;
+	}
+    
+    ul.page-numbers li {
+    	float: left;
+    	}
+
+ul.page-numbers a,
+ul.page-numbers span {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E4E3E3), to(#FFFFFF));
+	background: -moz-linear-gradient(top,  #E4E3E3,  #FFFFFF);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E4E3E3', endColorstr='#FFFFFF');
+	padding: 3px 4px 2px 4px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	color: #666;
+	}
+
+ul.page-numbers a:hover,
+ul.page-numbers span.current {	
+	border: 1px solid #666;
+	color: #444;
 }
 /*============================================== Header =========================================================*/
 .area-pad {
