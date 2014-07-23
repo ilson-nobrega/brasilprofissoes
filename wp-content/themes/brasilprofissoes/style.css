@@ -508,6 +508,18 @@ button {
 	float: left;
 	margin-right: 15px;
 }
+.noticias article .readmore {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.readmore {
+	background: #2bb673 url(img/arrow.jpg) no-repeat 48px center;
+	padding: 5px 27px 5px 10px;
+	color: #fff;
+	border-radius: 8px;
+	display: inline-block;
+}
 .mais-lidas ul {
 	counter-reset: li;
 	padding: 0;
