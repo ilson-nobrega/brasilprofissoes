@@ -13,10 +13,10 @@
                 ),
                     'public' 		=> true,
                     'menu_icon' 	=> 'dashicons-welcome-learn-more',
-                    'menu_position' => 32,
+                    'menu_position' => 52,
                     'has_archive'	=> true,
                     'rewrite'       => array('slug' => 'cursos'),
-                    'supports'      => array('title', 'editor', 'thumbnail'),
+                    'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields'),
                     'taxonomies'    => array('post_tag')
                 )
             );
@@ -28,7 +28,7 @@
         function cria_taxonomy_cursos(){
             	
             register_taxonomy(
-                'tipos_de_cursos',
+                'cursos',
                 'cursos',
                 array(
                     'labels'    => array(

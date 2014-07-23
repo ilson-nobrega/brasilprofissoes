@@ -4,9 +4,9 @@
 	 * Importa todas as bibliotecas necessárias
 	 */
 		//Post Type
-// 		require_once 'lib/posttype-profissoes.php';
-// 		require_once 'lib/posttype-cursos.php';
-// 		require_once 'lib/posttype-guias.php';
+		require_once 'lib/posttype-profissoes.php';
+		require_once 'lib/posttype-cursos.php';
+		require_once 'lib/posttype-guias.php';
 		
 		//Bootstrap Menu para WordPress
 		require_once 'lib/wp_bootstrap_navwalker.php';
@@ -24,7 +24,7 @@
 	 */
 		function admin_menu_separador() {
 		
-			add_admin_menu_separador(28);
+			add_admin_menu_separador(50);
 		}
 		
 	/**
@@ -65,7 +65,7 @@
 	 * OBS: Os registros das bibliotecas encontram-se no arquivo de cada uma
 	 */	
 		// Registra o separador de menu
-// 		add_action('admin_menu','admin_menu_separador');
+		add_action('admin_menu','admin_menu_separador');
 		// Registra os estilos personalizados
 		add_action('wp_enqueue_scripts','bp_estilos');
 		// Registra os scripts do template

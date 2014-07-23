@@ -13,10 +13,10 @@
 					),
 					'public' 		=> true,
 					'menu_icon' 	=> 'dashicons-businessman',
-					'menu_position' => 31,
+					'menu_position' => 51,
 					'has_archive'	=> true,
 					'rewrite'       => array('slug' => 'profissoes'),
-					'supports'      => array('title', 'editor', 'thumbnail'),
+					'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields'),
 					'taxonomies'    => array('post_tag')
 				)
 			);
@@ -28,7 +28,7 @@
 		function cria_taxonomy_profissoes(){
 			
 			register_taxonomy(
-				'tipos_de_profissoes',
+				'profissoes',
 				'profissoes',
 				array(
 				    'labels'    => array(
