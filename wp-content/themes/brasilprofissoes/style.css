@@ -208,7 +208,6 @@ nav .fa-google-plus {
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-/*============================================== Header FIM =========================================================*/
 
 /*============================================== Footer =========================================================*/
 #redes_busca {
@@ -326,7 +325,6 @@ dl a:hover {
 	color: #FFF;
 	font-family: Arial, Helvetica, sans-serif;
 }
-/*============================================== Footer FIM =========================================================*/
 
 /*============================================== HOME =============================================================*/
 .noticiasboxes {
@@ -350,7 +348,6 @@ dl a:hover {
 	padding-bottom: 15px;
 	min-height: 370px;
 }
-/*============================================== HOME FIM =========================================================*/
 
 /*============================================== Pesquisa =========================================================*/
 .novapesquisa form {
@@ -372,7 +369,6 @@ dl a:hover {
 .novapesquisa .searchform input {
 	border: 1px solid #ccc;
 }
-/*============================================== Pesquisa FIM =========================================================*/
 
 /*============================================== Transições =========================================================*/
 .fa, .navbar-nav>li, 
@@ -457,6 +453,43 @@ button {
 	padding-top: 5px;
 	margin-top: 5px;
 }
-/*============================================ Internas = PARCEIROS fim ==================================================*/
+
+/*============================================ Internas = Noticias ==================================================*/
+.mais-lidas ol {
+	counter-reset: li;
+	padding: 0;
+}
+.mais-lidas li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 20px;
+	background: #dfe0e1;
+	margin-left: 70px;
+	padding: 5px;
+	height: 80px;
+}
+.mais-lidas li:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	top: 0;
+	left: -70px;
+	font: 60px "Gotham-Bold" normal;
+	background: #939598;
+	color: #fabe32;
+	width: 70px;
+	display: block;
+	text-align: center;
+	padding: 7px 0;
+}
+.mais-lidas li:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.mais-lidas a {
+	color: inherit;
+	display: block;
+}
 
 @import url("../brasilprofissoes/css/mediaquery.css");
