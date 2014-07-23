@@ -36,7 +36,7 @@
                             <br>
                             <ol class="breadcrumb">
                                 <li><a href="<?php echo home_url(); ?>">Home</a></li>
-                                <li><a href="<?php echo home_url(); ?>/?cat=24">Notícias</a></li>
+                                <li><a href="<?php echo home_url(); ?>/?cat=10">Notícias</a></li>
                                 <li class="active"><?php the_title(); ?></li>
                             </ol>
                             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
