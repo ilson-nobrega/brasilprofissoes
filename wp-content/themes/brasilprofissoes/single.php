@@ -32,7 +32,7 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-9">
+                        <div class="col-md-9 col-sm-8 noticias">
                             <br>
                             <ol class="breadcrumb">
                                 <li><a href="<?php echo home_url(); ?>">Home</a></li>
@@ -41,7 +41,9 @@
                             </ol>
                             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                                 <article>
-                                    <?php the_title(); ?>
+                                    <?php the_post_thumbnail('thumbnail25', array('class' => 'img-responsive')); ?>
+                                    <h2><?php the_title(); ?></h2>
+                                    <p class="data"><?php the_time('j F, Y') ?></p>
                                     <?php the_content(); ?>
                                 </article>
                             <?php endwhile?>
@@ -52,7 +54,7 @@
                                 </article>            
                             <?php endif; ?>
                         </div>
-                        <div class="col-md-3 nopad">
+                        <div class="col-md-3 col-sm-4 nopad">
                             <div class="mais-lidas">
                                 <?php dynamic_sidebar( 'maislidas' ); ?>
                             </div>
