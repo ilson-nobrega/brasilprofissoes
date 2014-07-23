@@ -135,6 +135,12 @@ header form .area-search2 {
 	position: absolute;
 	z-index: 99999;
 }
+
+.dropdown:hover .dropdown-menu{
+   display: block;
+
+}
+
 .navbar-nav {
 	height: 68px;
 	margin-left: 84px;
