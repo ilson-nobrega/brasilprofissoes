@@ -62,6 +62,11 @@ padding: 0;
 	background-color: #ededed;
 	
 }
+.carousel-parceiros img{
+	height: 289px;
+
+}
+/*temporario*/
 
 /*==================================== Busca de Cursos ====================================*/
 .busca_cursos .col-titulo{
@@ -138,12 +143,32 @@ padding-left: 50px;
 .noticias .mais_lidas h3,
 .noticias .publicidade h3{
 	text-align: center;
+
 }
 
 
-.noticias .ultimas_noticias .container_noticias,.noticias .mais_lidas .container_noticias{
-	height: 310px;	
+.noticias .ultimas_noticias .container_noticias,
+.noticias .mais_lidas .container_noticias{
+	height: 350px;	
 	background-color: #ededed;
 	border: 2px solid #dddcdc;
 }
+
+.boxum{
+	height: 175px;
+	border-bottom: 1px solid #fff;
+} 
+
+.boxdois{
+	height: 175px;
+}
+
+.boxum .textobox{
+	padding: 0 0 0 15px;
+}
+
+.link1 {
+padding-left: 142px;
+}
+
 
