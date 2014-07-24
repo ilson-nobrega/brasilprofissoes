@@ -38,10 +38,7 @@
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/acessibilidade.png" title="acessibilidade" alt="acessibilidade">
 					ACESSIBILIDADE
 				</div>
-				<form action="busca_geral.php" method="post" class="nopad col-lg-3 col-md-4 col-sm-4 col-xs-12" style="float:right;background: #fff;">
-					<input type="search" name="busca" placeholder="busca no site" required="">
-					<button type="submit" class="area-search"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_busca_topo.png" alt="buscar" title="buscar"></button>
-				</form>
+				<?php get_search_form(); ?>
 			</div>
 		</div>
 		<div class="logos container">

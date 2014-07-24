@@ -16,6 +16,9 @@
 		
 		//Editor Customizado
 		require_once 'lib/custom_editor.php';
+
+		//Paginação nas noticias
+		require_once 'lib/paginacao.php';
 	
 	
 	/**
@@ -213,3 +216,13 @@ function content($limit) {
   $content = str_replace(']]>', ']]&gt;', $content);
   return $content;
 }
+
+register_sidebar( array(
+    'name'         => __( 'Mais lidas' ),
+    'id'           => 'maislidas',
+    'description'  => __( 'Campo para as notícias mais lidas.' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+	'before_title' => '<h3>',
+    'after_title'  => '</h3>',
+) );
