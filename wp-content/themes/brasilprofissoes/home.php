@@ -80,7 +80,9 @@
 			</div>
 
 			<div class="row pad-y busca_cursos">
-				
+				<div class="titulo">
+					<h3>Buscar por cursos</h3>
+				</div>
 				<div class="col-md-6 col-sm-6 col-titulo">
 					<div class="titulo_cursos">
 						<h1>Busque entre mais</br> de 1000 cursos:</h1>
@@ -115,6 +117,9 @@
 			</div>
 			
 			<div class="row pad-y cursos_destaque">
+				<div class="titulo">
+					<h3>Cursos em destaque</h3>
+				</div>
 				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/tecnico_administracao.jpg" class="img-responsive"></a>
 				</div> 
@@ -228,6 +233,17 @@
 
 
 			</div>
+
+			<div class="row pad-y">
+			<div class="titulo">
+				<h3>Curtam nossa fan page</h3>
+			</div>	
+			
+				<iframe class="col-md-9 iframe_facebook" id="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fbrasilprofissoes&amp;width=900&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"></iframe>
+					
+					<div class="col-md-3 nopad">
+						<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg" class="img-responsive"></a>
+					</div>
 
         </div>
     </section>
