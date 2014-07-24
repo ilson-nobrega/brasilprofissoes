@@ -33,6 +33,7 @@
 	/**
 	 * Adiciona imagem destacada */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'thumbnail-noti', 220, 220, true );
 	add_image_size( 'thumbnail25', 320, 300 );
 	add_image_size( 'destaquebox-img', 503, 300 );
 		
