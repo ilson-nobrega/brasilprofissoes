@@ -3,33 +3,33 @@
     <section>
         <div class="container">
         	<div class="row">
-	        	<div class="col-md-9 gray" style="height:516px;"></div>
-	        	<img class="col-md-3 nopad-right img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg">
+	        	<div class="col-md-9 col-sm-9 gray" style="height:516px;"></div>
+	        	<img class="col-md-3 col-sm-3 nopad-right img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg">
         	</div>
         	
         	<div class="row carreira">
 				<h1><p>Chegou a hora de encontrar a</p> <p>profissão certa e turbinar sua carreira:</p></h1>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/proficoes_tecnicas.jpg" class="img-responsive"></a>
 				</div>	
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/academicas.jpg" class="img-responsive"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/publicas.jpg" class="img-responsive"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/emprededorismo.jpg" class="img-responsive"></a>
 				</div>
 				
 	        </div>
 
 	        <div class="row pad-y caminhos_futuros">
-	        	<div class="col-md-9">
+	        	<div class="col-md-9 col-sm-9">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/caminhos_futuros.jpg" class="img-responsive"></a>	
 	        	</div>
 				
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<div class="enquete">
 						<h4>Qual desses cusos precisam de maior prioridade?</h4>
 						<form action="" class="form_enquete" method="post">
@@ -56,15 +56,24 @@
 	        </div>
 			
 			<div class="row pad-y intituicoes">
-				<div class="col-md-5">
+				<div class="col-md-5 col-sm-5">
 					<div class="encontrar_vagas">
-						<h1><p>encontre</p> <p>vagas e cursos</p> <p>por instituições</p></h1>
+						<h1>encontre</br> vagas e cursos</br> por instituições</h1>
 					</div>
 					
 				</div>
 				
-				<div class="col-md-7">
+				<div class="col-md-7 col-sm-7">
 					<div class="carousel-parceiros">
+					<!--Nestas imagens há um css que deixa a altura delas com 289px no home.css linha 65 (tirar quando por o caroucel)-->	
+						<a href="?cat=24"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro1.jpg"  class="col-md-5 nopad  img-responsive"></a>
+						
+						
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro2.jpg" class="col-md-3 nopad img-responsive">
+					
+					
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro3.jpg" class="col-md-4 nopad img-responsive">
+						
 					</div>
 				</div>
 
@@ -72,12 +81,12 @@
 
 			<div class="row pad-y busca_cursos">
 				
-				<div class="col-md-6 col-titulo">
+				<div class="col-md-6 col-sm-6 col-titulo">
 					<div class="titulo_cursos">
-						<h1><p>Busque entre mais</p> <p>de 1000 cursos:</p></h1>
+						<h1>Busque entre mais</br> de 1000 cursos:</h1>
 					</div>	
 				</div>
-				<div class="col-md-6 col-form">
+				<div class="col-md-6 col-sm-6 col-form">
 					<div class="form_cursos">
 						<form action="" method="post">
 							<ul>
@@ -97,7 +106,7 @@
 							</li>	
 							</ul>
 						</form>
-						<ul class="col-md-11 ul_link">
+						<ul class="col-md-11 col-sm-11 ul_link">
 						<li class="ico_msg "><a href="#">Receba Grátis em seu email um aviso sobre cursos</a></li>
 						</ul>
 					</div>
@@ -106,16 +115,16 @@
 			</div>
 			
 			<div class="row pad-y cursos_destaque">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/tecnico_administracao.jpg" class="img-responsive"></a>
 				</div> 
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/gerente_banco.jpg" class="img-responsive"></a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/juiz_direito.jpg" class="img-responsive"></a>
 				</div> 
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/curso_sebrae.jpg" class="img-responsive"></a>
 				</div> 
 
@@ -135,6 +144,33 @@
 		                           non adipiscing. Nulla nunc porta lorem</p>
 									
 									<div class="col-md-12 container_noticias">
+										
+										<div class="boxum pad-y">
+											
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
+											<div class="col-md-9 textobox">
+												<h4>Notícias sobre cursos e empregos</h4>
+												<p>09 de janeiro de 2013</p>
+
+												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
+												
+												
+											</div>
+										</div>
+
+										<div class="boxum pad-y">
+											
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
+											<div class="col-md-9 textobox">
+												<h4>Notícias sobre cursos e empregos</h4>
+												<p>09 de janeiro de 2013</p>
+
+												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
+												
+												
+											</div>
+										</div>
+										
 									</div>		
 							</div>
 					</div>
@@ -153,6 +189,31 @@
 		                           non adipiscing. Nulla nunc porta lorem</p>
 									
 									<div class="col-md-12 container_noticias">
+										<div class="boxum pad-y">
+											
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
+											<div class="col-md-9 textobox">
+												<h4>Notícias sobre cursos e empregos</h4>
+												<p>09 de janeiro de 2013</p>
+
+												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
+												
+												
+											</div>
+										</div>
+
+										<div class="boxum pad-y">
+											
+											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
+											<div class="col-md-9 textobox">
+												<h4>Notícias sobre cursos e empregos</h4>
+												<p>09 de janeiro de 2013</p>
+
+												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
+												
+												
+											</div>
+										</div>
 									</div>		
 							</div>
 					</div>
