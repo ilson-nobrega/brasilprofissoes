@@ -63,10 +63,11 @@ padding: 0;
 	
 }
 .carousel-parceiros img{
+/*Este css é temporario até que o caroucel seja colocado*/	
 	height: 289px;
 
 }
-/*temporario*/
+
 
 /*==================================== Busca de Cursos ====================================*/
 .busca_cursos .col-titulo{
@@ -172,3 +173,19 @@ padding-left: 142px;
 }
 
 
+/*==================================== titulo ====================================*/
+
+.titulo{
+	width: 100%;
+	background: url(../img/titulo.png) repeat-x center 32px;
+}
+.titulo h3{
+	background-color: #FFF;
+	display: inline-block;
+	padding-right: 10px;
+}
+
+.iframe_facebook{
+	height: 300px;
+	border: none;
+}
