@@ -26,7 +26,7 @@
         	<div class="row">
                 <h2>Projetos do <?php single_cat_title(); ?></h2>
         		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        			<article class="col-md-3 col-xs-3 parceiro">
+        			<article class="col-md-3 col-xs-3 parceiro min-pad">
                         <div>
                             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
                                 <span>saiba mais</span>

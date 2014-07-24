@@ -227,3 +227,12 @@ register_sidebar( array(
 	'before_title' => '<h3>',
     'after_title'  => '</h3>',
 ) );
+register_sidebar( array(
+    'name'         => __( 'Menu esquerdo' ),
+    'id'           => 'menu-esquerdo',
+    'description'  => __( 'Campo para o menu de profissões.' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+	'before_title' => '<h3>',
+    'after_title'  => '</h3>',
+) );
