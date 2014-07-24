@@ -52,7 +52,9 @@
                             setup_postdata($post);
                         ?>
                         <article>
-                            <?php the_post_thumbnail('destaquebox-img', array('class' => 'img-responsive')); ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('destaquebox-img', array('class' => 'img-responsive')); ?>
+                            </a>
                             <p class="data"><?php the_time('j F, Y') ?></p>
                             <h2><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h2>
                             <?php echo excerpt(80); ?>
@@ -66,7 +68,9 @@
                             setup_postdata($post);
                         ?>
                         <article class="col-md-6 col-xs-6">
-                            <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                            <a href="<?php the_permalink(); ?>">
+                                <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                            </a>
                             <p class="data"><?php the_time('j F, Y') ?></p>
                             <h3><a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>"><?php the_title(); ?></a></h3>
                             <?php echo excerpt(10); ?>
