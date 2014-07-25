@@ -6,6 +6,13 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     
+   <script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-2.1.1.min.js"></script>
+	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.js"></script>
+	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/script.js"></script>
+	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider/jquery-easing-1.3.pack.js"></script>
+	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider/jquery-easing-compatibility.1.2.pack.js"></script>
+	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider/coda-slider.1.1.1.pack.js"></script>
+    
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" />
     
