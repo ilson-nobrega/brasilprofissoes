@@ -1,0 +1,37 @@
+/*
+	Featured Content Slider
+	by: Chris Coyier
+*/
+					  				  
+/*
+	SLIDER
+*/
+.slider{
+	width: 900px; position: relative; min-height: 450px;
+}
+.panelContainer                             { width: 6000px !important;}
+.stripViewer .panelContainer .panel ul		{ text-align: left; margin: 0; }
+.stripViewer								{ position: relative; overflow: hidden; width: 900px; height: 450px; }
+.stripViewer .panelContainer				{ position: relative; left: 0; top: 0; }
+.stripViewer .panelContainer .panel			{ float: left; height: 100%; width: 900px; }
+.stripNavL, .stripNavR, .stripNav			{ display: none; }
+
+.icones{
+	/*margin-top: -3px;*/
+	width: 900px;
+}
+.icone-slide{
+	/*	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;*/
+}
+.icones a{
+	margin-left: 0px;
+}
+.icones div img{
+	width: 25%;
+	margin: 0px;
+	float: left;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}

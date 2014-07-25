@@ -173,19 +173,11 @@ padding-left: 142px;
 }
 
 
-/*==================================== titulo ====================================*/
+/*==================================== facebook ====================================*/
 
-.titulo{
-	width: 100%;
-	background: url(../img/titulo.png) repeat-x center 32px;
-}
-.titulo h3{
-	background-color: #FFF;
-	display: inline-block;
-	padding-right: 10px;
-}
 
 .iframe_facebook{
 	height: 300px;
 	border: none;
 }
+
