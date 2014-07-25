@@ -41,6 +41,83 @@
         	<div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
         	</div>
+			
+			<div class="row pad-y">
+				<div class="cursos">
+					<div class="titulo">
+						<h3>Cursos</h3>
+					</div>
+					
+					
+					<div class="col-md-3 col-sm-2">
+						<div class="img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class=" img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 col-sm-2">
+						<div class=" img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 nopad col-sm-2">
+						<div class=" img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>		
+				</div>
+			</div>	
+
+			<div class="row pad-y">
+				<div class="cursos">
+					<div class="titulo">
+						<h3>Oportunidades</h3>
+					</div>
+					
+					
+					<div class="col-md-3 col-sm-2">
+						<div class="img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 col-sm-3">
+						<div class=" img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 col-sm-2">
+						<div class=" img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>
+					<div class="col-md-3 nopad col-sm-2">
+						<div class=" img_cursos">
+							<div class="blue">
+								<a href="#"><h3>Administrador Publico</h3></a>
+							</div>
+						</div>	
+					</div>		
+				</div>
+			</div>
+
         </div>
     </section>
     

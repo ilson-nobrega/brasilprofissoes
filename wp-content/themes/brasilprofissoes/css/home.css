@@ -175,9 +175,43 @@ padding-left: 142px;
 
 /*==================================== facebook ====================================*/
 
-
 .iframe_facebook{
 	height: 300px;
 	border: none;
 }
+
+/*###################################################################################*/
+/*================================= Pagina de Profissoes ============================*/
+/*###################################################################################*/
+
+
+
+.img_cursos{
+	height: 219px;
+	background-image: url('../img/foto.jpg');
+	
+}
+
+.img_cursos h3{
+	color: #fff;
+	height: 219px;
+	padding-top: 92px;
+}
+
+.img_cursos h3{
+	text-align: center;
+}
+
+.blue{
+	z-index: 1;
+	background: rgba(13, 108, 172, 0.7);
+	width: 100%;
+	height:219;
+}
+
+.blue:hover{
+	background: rgba(13, 108, 172, 0.1);
+}
+
+
 
