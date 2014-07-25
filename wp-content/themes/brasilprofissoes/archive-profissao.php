@@ -44,9 +44,13 @@
 			
 			<div class="row pad-y">
 				<div class="cursos">
-					<div class="titulo">
-						<h3>Cursos</h3>
+					<div class="busca col-md-3 col-md-offset-9">
+						<a href="#"></a>
 					</div>
+					<div class="titulo">
+						<h3 style="margin:-29px;">Cursos</h3>
+					</div>
+					
 					
 					
 					<div class="col-md-3 col-sm-2">
@@ -82,8 +86,11 @@
 
 			<div class="row pad-y">
 				<div class="cursos">
+					<div class="busca col-md-3 col-md-offset-9">
+						<a href="#"></a>
+					</div>
 					<div class="titulo">
-						<h3>Oportunidades</h3>
+						<h3 style="margin:-29px;">Oportunidades</h3>
 					</div>
 					
 					
