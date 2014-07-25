@@ -19,10 +19,14 @@ p {
 }
 ul, ol {
 	list-style-type: none;
+	padding: 0;
 }
 .pad-y {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+.min-pad {
+	padding: 0 5px 10px;
 }
 .nopad {
    padding: 0 !important;
@@ -164,7 +168,7 @@ header form .area-search2 {
 	height: 72px;
 }
 
-.menu {
+header .menu {
 	background: #2bb673;
 	border-top: 4px solid #2a7355;
 	height: 72px;
@@ -437,11 +441,7 @@ button {
 	filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-/*============================================ Internas = PARCEIROS ==================================================*/
-.parceiros article.col-md-3 {
-	padding: 0 5px 10px;
-	position: relative;
-}
+/*============================================ PARCEIROS ==================================================*/
 .parceiro div {
 	background: #3876a3;
 }
@@ -495,7 +495,10 @@ button {
 	margin-top: 5px;
 }
 
-/*============================================ Internas = Noticias ==================================================*/
+/*============================================ Profissões ================================================*/
+
+
+/*============================================ Noticias ==================================================*/
 .noticias article {
 	border: 1px solid #c0bfbe;
 	background: #f6f6f6;

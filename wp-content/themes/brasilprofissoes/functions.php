@@ -33,6 +33,7 @@
 	/**
 	 * Adiciona imagem destacada */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'thumbnail-noti', 220, 220, true );
 	add_image_size( 'thumbnail25', 320, 300 );
 	add_image_size( 'destaquebox-img', 503, 300 );
 		
@@ -221,6 +222,15 @@ register_sidebar( array(
     'name'         => __( 'Mais lidas' ),
     'id'           => 'maislidas',
     'description'  => __( 'Campo para as notícias mais lidas.' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+	'before_title' => '<h3>',
+    'after_title'  => '</h3>',
+) );
+register_sidebar( array(
+    'name'         => __( 'Menu esquerdo' ),
+    'id'           => 'menu-esquerdo',
+    'description'  => __( 'Campo para o menu de profissões.' ),
     'before_widget' => '<div>',
     'after_widget'  => '</div>',
 	'before_title' => '<h3>',
