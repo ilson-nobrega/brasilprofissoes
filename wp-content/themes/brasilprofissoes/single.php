@@ -4,6 +4,11 @@
     switch ($categoria['0']->term_id) {
         //Parceiros
         case '24':
+            if(is_tax(the_slug())){
+                echo 'True';
+            }else{
+                echo 'False';
+            }
     ?>
             <section>
                 <div class="container">
@@ -26,8 +31,9 @@
             </section>
     <?php
         break;
-            //Noticias
-            case '10':
+        
+        //Noticias
+        case '10':
     ?>
             <section>
                 <div class="container">
@@ -64,8 +70,13 @@
             </section>
     <?php
         break;
-            default:
-            break;
+        default:
+             
+    ?>
+            
+        
+    <?php
+        break;
         }
     ?>
             <section>
