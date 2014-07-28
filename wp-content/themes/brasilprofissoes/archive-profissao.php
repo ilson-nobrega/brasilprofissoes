@@ -74,9 +74,11 @@
         				   );
 
                             //Instancia a classe de busca do Wordpress e passa os argumentos
-					       $query = new WP_Query();
+					       $query = new WP_Query($args);
 					       
-                           while ($query->have_posts()) : $query->the_post();
+					       if($query->have_posts()){
+
+                                while ($query->have_posts()) : $query->the_post();
                     ?>
                     Teste
 <!--                                 <div class="col-md-3 col-sm-2"> -->
@@ -87,7 +89,11 @@
 <!--             						</div>	 -->
 <!--             					</div> -->
                     <?php    
-                           endwhile;
+                                endwhile;
+                           }else{
+
+                                echo 'Sem nenhum post.'; 
+                           }
 					?>
 					
 <!-- 					<div class="col-md-3 col-sm-2"> -->
