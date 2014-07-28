@@ -509,6 +509,16 @@ button {
 
 /*============================================ Profissões ================================================*/
 
+.cursos .titulo h3{
+	background-color: transparent;
+
+} 
+
+.cursos .titulo .cor{
+	background-color: #fff;
+	padding-right: 10px;
+}
+
 .img_cursos{
 	height: 219px;
 	background-image: url('img/foto.jpg');
@@ -533,12 +543,37 @@ button {
 }
 
 .blue:hover{
-	background: rgba(13, 108, 172, 0.1);
+	background: rgba(13, 108, 172, 0.4);
 }
 
 .busca{
 	background-color: #dddcdc;
 	height: 50px;
+}
+
+.link_vertodos{
+	background-color: #fabe32;
+	color: #fff;
+	text-align: center;
+	padding: 6px;
+}
+
+.busca input{
+	padding: 6px;
+	border: none;
+	
+}
+
+.busca button{
+	background-image: url("img/busca.png");
+	height: 32px;
+	width: 12%;
+	border: none;
+}
+
+.busca form{
+	padding-top: 10px;
+
 }
 
 
