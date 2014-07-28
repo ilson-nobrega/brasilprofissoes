@@ -7,6 +7,7 @@
 		require_once 'lib/posttype-profissoes.php';
 		require_once 'lib/posttype-cursos.php';
 		require_once 'lib/posttype-guias.php';
+		require_once 'lib/posttype-oportunidades.php';
 		
 		//Bootstrap Menu para WordPress
 		require_once 'lib/wp_bootstrap_navwalker.php';
