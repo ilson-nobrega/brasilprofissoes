@@ -1,8 +1,187 @@
+
+/*==================================== Carrreira ====================================*/
 .carreira h1{
 	text-align: center;
 }
 
 .carreira img:hover{
 	opacity: 0.6;
+}
+
+.intituicoes .encontrar_vagas{
+	height: 285px;
+	background-color: #f9be32;
+}
+
+/*==================================== Caminhos fruturos ====================================*/
+.caminhos_futuros .enquete{
+	height: 284px;
+	background-color: #ececec;
+	padding: 10px;
+}
+
+.caminhos_futuros .enquete h3{
+	margin: 0;
 
 }
+
+
+.caminhos_futuros .enquete .form_enquete label{
+	font-size: 18px;
+	padding-left: 10px;
+	color: #5b5b5a;
+}
+
+.caminhos_futuros .enquete .form_enquete ul{
+padding: 0;
+	margin: 0;
+}
+.caminhos_futuros .enquete .form_enquete ul li{
+	display: block;
+	padding-top: 10px;
+	
+}
+
+.caminhos_futuros .enquete .form_enquete ul li button{
+	border: none;
+	background-color: #ececec;
+
+}
+
+/*==================================== Instituições ====================================*/
+.intituicoes .encontrar_vagas h1{
+	text-align: center;
+	color: #FFF;
+	font-size: 40px;
+	padding-top: 55px;
+	margin: 0;
+}
+
+.intituicoes .carousel-parceiros{
+	height: 285px;
+	background-color: #ededed;
+	
+}
+.carousel-parceiros img{
+/*Este css é temporario até que o caroucel seja colocado*/	
+	height: 289px;
+
+}
+
+
+/*==================================== Busca de Cursos ====================================*/
+.busca_cursos .col-titulo{
+	height: 170px;
+	background-color: #2bb673;
+	
+}
+
+.busca_cursos .col-form{
+	height: 170px;
+	background-color: #fabe32;
+	padding: 10px;
+}
+
+.busca_cursos .titulo_cursos h1{
+	text-align: center;
+	color: #fff;
+	padding-top: 15px;
+	font-size: 40px;
+}
+
+.busca_cursos .form_cursos input,.busca_cursos .form_cursos select{
+	height: 50px;
+	border: 0;
+	font-family: webkit-small-control;
+}
+
+
+.busca_cursos ul{
+	padding: 0;
+	margin: 0;
+}
+.busca_cursos ul li{
+	display: block;
+	list-style: none;
+}
+	
+
+.busca_cursos .form_cursos button{
+	border: none;
+	background-color: #fabe32;
+
+}
+
+li.select_estado{
+	padding-top: 65px;
+}
+
+.busca_cursos .ico_msg{
+	list-style-image:url('../img/msg_ico.jpg') ;
+	display: list-item;
+	padding-top: 8px;
+}
+
+.busca_cursos .ico_msg a{
+
+}
+
+.busca_cursos .ul_link{
+padding-left: 50px;
+}
+
+/*==================================== Cursos em destaque ====================================*/
+
+.cursos_destaque img:hover {
+	opacity: 0.6;
+}
+
+/*==================================== Noticias ====================================*/
+
+.noticias .ultimas_noticias h1,
+.noticias .ultimas_noticias h3,
+.noticias .mais_lidas h1,
+.noticias .mais_lidas h3,
+.noticias .publicidade h3{
+	text-align: center;
+
+}
+
+
+.noticias .ultimas_noticias .container_noticias,
+.noticias .mais_lidas .container_noticias{
+	height: 350px;	
+	background-color: #ededed;
+	border: 2px solid #dddcdc;
+}
+
+.boxum{
+	height: 175px;
+	border-bottom: 1px solid #fff;
+} 
+
+.boxdois{
+	height: 175px;
+}
+
+.boxum .textobox{
+	padding: 0 0 0 15px;
+}
+
+.link1 {
+padding-left: 142px;
+}
+
+
+/*==================================== facebook ====================================*/
+
+.iframe_facebook{
+	height: 300px;
+	border: none;
+}
+
+
+
+
+
+

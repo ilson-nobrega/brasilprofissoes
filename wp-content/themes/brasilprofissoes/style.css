@@ -8,15 +8,37 @@ Version: 1.0
 @import url("../brasilprofissoes/fontes/fontes.css");
 @import url("../brasilprofissoes/css/home.css");
 
+/*Titulo*/
+
+.titulo {
+	width: 100%;
+	background: url(../brasilprofissoes/img/titulo.png) repeat-x center 32px;
+}
+.titulo h3 {
+	background-color: #FFF;
+	display: inline-block;
+	padding-right: 10px;
+}
+
 .gray {
 	background: #ccc;
 }
 body {
 	font-family: Gotham-Medium;
 }
+p {
+	font-family: Gotham-Light;
+}
+ul, ol {
+	list-style-type: none;
+	padding: 0;
+}
 .pad-y {
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+.min-pad {
+	padding: 0 5px 10px;
 }
 .nopad {
    padding: 0 !important;
@@ -39,6 +61,40 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .data {
 	margin-top: 10px;
+}
+ul.page-numbers {
+	margin: 20px 0 10px;
+	width: 100%;
+	padding: 0;
+	font-size: 12px;
+	line-height: normal;
+	clear: both;
+	float: left;
+	}
+    
+    ul.page-numbers li {
+    	float: left;
+    	}
+
+ul.page-numbers a,
+ul.page-numbers span {
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#E4E3E3), to(#FFFFFF));
+	background: -moz-linear-gradient(top,  #E4E3E3,  #FFFFFF);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#E4E3E3', endColorstr='#FFFFFF');
+	padding: 3px 4px 2px 4px; 
+	margin: 2px;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	color: #666;
+	}
+
+ul.page-numbers a:hover,
+ul.page-numbers span.current {	
+	border: 1px solid #666;
+	color: #444;
 }
 /*============================================== Header =========================================================*/
 .area-pad {
@@ -113,15 +169,6 @@ header form .area-search2 {
 	background-color: #2bb673;
 	border-top: 5px #febe31 solid;
 }
-header input[type=search] {
-	width: 100%;
-	position: relative;
-	border: none;
-	height: 72px;
-	padding: 0 15px;
-	float: left;
-	outline: none;
-}
 .area-search {
 	position: absolute;
 	right: 0;
@@ -133,7 +180,7 @@ header input[type=search] {
 	height: 72px;
 }
 
-.menu {
+header .menu {
 	background: #2bb673;
 	border-top: 4px solid #2a7355;
 	height: 72px;
@@ -144,12 +191,19 @@ header input[type=search] {
 	position: absolute;
 	z-index: 99999;
 }
+
+.dropdown:hover .dropdown-menu{
+   display: block;
+
+}
+
 .navbar-nav {
 	height: 68px;
 	margin-left: 84px;
 }
 .navbar-nav>li {
 	padding: 9px 0;
+	float: left;
 }
 .navbar-nav>li.open a {
 	background: transparent !important;
@@ -211,7 +265,6 @@ nav .fa-google-plus {
 	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-/*============================================== Header FIM =========================================================*/
 
 /*============================================== Footer =========================================================*/
 #redes_busca {
@@ -329,7 +382,6 @@ dl a:hover {
 	color: #FFF;
 	font-family: Arial, Helvetica, sans-serif;
 }
-/*============================================== Footer FIM =========================================================*/
 
 /*============================================== HOME =============================================================*/
 .noticiasboxes {
@@ -353,7 +405,27 @@ dl a:hover {
 	padding-bottom: 15px;
 	min-height: 370px;
 }
-/*============================================== HOME FIM =========================================================*/
+
+/*============================================== Pesquisa =========================================================*/
+.novapesquisa form {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.novapesquisa input {
+	width: 90%;
+}
+.searchform input {
+	width: 100%;
+	position: relative;
+	border: none;
+	height: 72px;
+	padding: 0 15px;
+	float: left;
+	outline: none;
+}
+.novapesquisa .searchform input {
+	border: 1px solid #ccc;
+}
 
 /*============================================== Transições =========================================================*/
 .fa, .navbar-nav>li, 
@@ -381,11 +453,7 @@ button {
 	filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-/*============================================ Internas = PARCEIROS ==================================================*/
-.parceiros article.col-md-3 {
-	padding: 0 5px 10px;
-	position: relative;
-}
+/*============================================ PARCEIROS ==================================================*/
 .parceiro div {
 	background: #3876a3;
 }
@@ -438,6 +506,137 @@ button {
 	padding-top: 5px;
 	margin-top: 5px;
 }
-/*============================================ Internas = PARCEIROS fim ==================================================*/
+
+/*============================================ Profissões ================================================*/
+
+.cursos .titulo h3{
+	background-color: transparent;
+
+} 
+
+.cursos .titulo .cor{
+	background-color: #fff;
+	padding-right: 10px;
+}
+
+.img_cursos{
+	height: 219px;
+	background-image: url('img/foto.jpg');
+	
+}
+
+.img_cursos h3{
+	color: #fff;
+	height: 219px;
+	padding-top: 92px;
+}
+
+.img_cursos h3{
+	text-align: center;
+}
+
+.blue{
+	z-index: 1;
+	background: rgba(13, 108, 172, 0.7);
+	width: 100%;
+	height:219;
+}
+
+.blue:hover{
+	background: rgba(13, 108, 172, 0.4);
+}
+
+.busca{
+	background-color: #dddcdc;
+	height: 50px;
+}
+
+.link_vertodos{
+	background-color: #fabe32;
+	color: #fff;
+	text-align: center;
+	padding: 6px;
+}
+
+.busca input{
+	padding: 6px;
+	border: none;
+	
+}
+
+.busca button{
+	background-image: url("img/busca.png");
+	height: 32px;
+	width: 12%;
+	border: none;
+}
+
+.busca form{
+	padding-top: 10px;
+
+}
+
+
+/*============================================ Noticias ==================================================*/
+.noticias article {
+	border: 1px solid #c0bfbe;
+	background: #f6f6f6;
+	padding: 20px 10px;
+	margin-bottom: 30px;
+	position: relative;
+	display: inline-block;
+}
+.noticias article img {
+	float: left;
+	margin-right: 15px;
+}
+.noticias article .readmore {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+.readmore {
+	background: #2bb673 url(img/arrow.jpg) no-repeat 48px center;
+	padding: 5px 27px 5px 10px;
+	color: #fff;
+	border-radius: 8px;
+	display: inline-block;
+}
+.mais-lidas ul {
+	counter-reset: li;
+	padding: 0;
+}
+.mais-lidas li {
+	position: relative;
+	list-style: none;
+	margin-bottom: 20px;
+	background: #dfe0e1;
+	margin-left: 70px;
+	padding: 5px;
+	height: 80px;
+}
+.mais-lidas li:before {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	top: 0;
+	left: -70px;
+	font: 60px "Gotham-Bold" normal;
+	background: #939598;
+	color: #fabe32;
+	width: 70px;
+	display: block;
+	text-align: center;
+	padding: 7px 0;
+}
+.mais-lidas li:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.mais-lidas a {
+	color: inherit;
+	display: block;
+}
 
 @import url("../brasilprofissoes/css/mediaquery.css");

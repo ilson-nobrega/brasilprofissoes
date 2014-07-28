@@ -4,9 +4,9 @@
 	 * Importa todas as bibliotecas necessárias
 	 */
 		//Post Type
-// 		require_once 'lib/posttype-profissoes.php';
-// 		require_once 'lib/posttype-cursos.php';
-// 		require_once 'lib/posttype-guias.php';
+		require_once 'lib/posttype-profissoes.php';
+		require_once 'lib/posttype-cursos.php';
+		require_once 'lib/posttype-guias.php';
 		
 		//Bootstrap Menu para WordPress
 		require_once 'lib/wp_bootstrap_navwalker.php';
@@ -16,20 +16,60 @@
 		
 		//Editor Customizado
 		require_once 'lib/custom_editor.php';
+
+		//Paginação nas noticias
+		require_once 'lib/paginacao.php';
 	
-	
+	/**
+	 * Função responsável por retornar os custom fields do post
+	 * Retorna false caso não possua nenhum custom field, e em caso positivo
+	 * retorna uma array com o titulo e o conteúdo do custom field
+	 */
+		function selecionaCustomFields(){
+		    
+		    $getPostCustomKeys = get_post_custom_keys(get_the_ID());
+		    
+		    foreach ($getPostCustomKeys as $key => $value) {
+		    
+		        $valueTrim = trim($value);
+		    
+		        if('_' == $valueTrim{0}){
+		            continue;
+		        }else{
+		            $valueFinal[] = $value;
+		        }
+		    
+		    }
+		    
+		    if(count($valueFinal)>0){
+		        
+    		    foreach ($valueFinal as $key => $value) {
+    		    
+    		        $getPostCustomValues = get_post_custom_values($value);
+    		    
+    		        $return[] = array('title'   => $valueFinal[$key],
+    		                        'content' => $getPostCustomValues[0]);
+
+    		    }
+    		    return $return;
+		    }
+		    
+		    return false;
+		}
+		
 	/**
 	 * Adiciona o separador de menu
 	 * (Ver a em /libs/separador-de-menu.php
 	 */
 		function admin_menu_separador() {
 		
-			add_admin_menu_separador(28);
+			add_admin_menu_separador(50);
 		}
 		
 	/**
 	 * Adiciona imagem destacada */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'thumbnail-noti', 220, 220, true );
 	add_image_size( 'thumbnail25', 320, 300 );
 	add_image_size( 'destaquebox-img', 503, 300 );
 		
@@ -65,7 +105,7 @@
 	 * OBS: Os registros das bibliotecas encontram-se no arquivo de cada uma
 	 */	
 		// Registra o separador de menu
-// 		add_action('admin_menu','admin_menu_separador');
+		add_action('admin_menu','admin_menu_separador');
 		// Registra os estilos personalizados
 		add_action('wp_enqueue_scripts','bp_estilos');
 		// Registra os scripts do template
@@ -213,3 +253,22 @@ function content($limit) {
   $content = str_replace(']]>', ']]&gt;', $content);
   return $content;
 }
+
+register_sidebar( array(
+    'name'         => __( 'Mais lidas' ),
+    'id'           => 'maislidas',
+    'description'  => __( 'Campo para as notícias mais lidas.' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+	'before_title' => '<h3>',
+    'after_title'  => '</h3>',
+) );
+register_sidebar( array(
+    'name'         => __( 'Menu esquerdo' ),
+    'id'           => 'menu-esquerdo',
+    'description'  => __( 'Campo para o menu de profissões.' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+	'before_title' => '<h3>',
+    'after_title'  => '</h3>',
+) );

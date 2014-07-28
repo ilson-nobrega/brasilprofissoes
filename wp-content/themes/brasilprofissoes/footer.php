@@ -17,11 +17,13 @@
 	        		</div>
 	        		<div class="col-md-6 col-sm-6 col-xs-12 nopad-right" id="busca_rodape">
 	        			<img style="margin-top: 15px;" src="<?php echo get_stylesheet_directory_uri() ?>/img/brasil_profissoes.jpg" id="logo_rodape">
-	        			<form class="col-xs-6" action="busca_geral.php" method="post" id="busca_form_um">
-							<label for="busca">Busca no site</label>
-							<input type="search" placeholder=" o que procura?" name="busca" id="busca" required="">
-							<button type="submit"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_seta_login.jpg"></button>
-						</form>
+						<form role="search" method="get" id="busca_form_um" class="col-xs-6" action="<?php esc_url( home_url( '/' )); ?>">
+					        <label for="busca">Busca no site</label>
+					        <input type="text" placeholder=" o que procura?" value="<?php get_search_query(); ?>" name="s" id="s" />
+					        <button type="submit" id="searchsubmit" value="<?php esc_attr_x( 'Search', 'submit button' ); ?>">
+					            <img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_seta_login.jpg">
+					        </button>
+					    </form>
 	        		</div>
         		</div>
         	</div>
@@ -32,11 +34,11 @@
         	<div class="row">
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>O Portal</dt>
-					<dd><a href="#">Quem somos</a></dd>
-					<dd><a href="#">Responsabilidade Social</a></dd>
-					<dd><a href="#">Fale Conosco</a></dd>
-					<dd><a href="">Publicidade</a></dd>
-					<dd><a href="#">Termos e Política</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?page_id=11">Quem somos</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?page_id=13">Responsabilidade Social</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?page_id=15">Fale Conosco</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?page_id=18">Publicidade</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?page_id=20">Termos e Política</a></dd>
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Profissões</dt>
@@ -59,8 +61,8 @@
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Notícias</dt>
-					<dd><a href="#">Notícias</a></dd>
-					<dd><a href="#">Blog</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?cat=10">Notícias</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/?cat=10">Blog</a></dd>
 					<dt>Cursos</dt>
 					<dd><a href="#">Buscar curso</a></dd>
 					<dd><a href="#">Ver Todos</a></dd>
