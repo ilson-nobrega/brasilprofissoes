@@ -67,33 +67,38 @@
 					   /**
 					    * Função que busca os posts de Cursos e os lista abaixo
 					    */
-
+					
 					       //Argumentos que será utilizado na busca
         				   $args = array(
-        				   	   'post-type' => 'profissao'
+        				   	   'post_type' => 'curso',
+                               'posts_per_page' => '4',
+                               'orderby' => 'rand'
         				   );
 
                             //Instancia a classe de busca do Wordpress e passa os argumentos
-					       $query = new WP_Query($args);
+					       $busca = new WP_Query($args);
 					       
-					       if($query->have_posts()){
+					       
+					       if($busca->have_posts()){
 
-                                while ($query->have_posts()) : $query->the_post();
+                                while ($busca->have_posts()){ 
+
+                                    $busca->the_post();
                     ?>
-                    Teste
-<!--                                 <div class="col-md-3 col-sm-2"> -->
-<!--             						<div class="img_cursos"> -->
-<!--             							<div class="blue"> -->
-            								<a href="#"><h3><?php get_the_title(); ?></h3></a>
-<!--             							</div> -->
-<!--             						</div>	 -->
-<!--             					</div> -->
+                                <div class="col-md-3 col-sm-2">
+            						<div class="img_cursos">
+            							<div class="blue">
+            								<a href="#"><h3><?php echo get_the_title(); ?></h3></a>
+            							</div>
+            						</div>	
+            					</div>
                     <?php    
-                                endwhile;
+                                }
                            }else{
 
                                 echo 'Sem nenhum post.'; 
                            }
+                           wp_reset_postdata();
 					?>
 					
 <!-- 					<div class="col-md-3 col-sm-2"> -->
