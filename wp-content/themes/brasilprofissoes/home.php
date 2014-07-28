@@ -280,6 +280,7 @@
 					<div class="col-md-3 nopad">
 						<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg" class="img-responsive"></a>
 					</div>
+			</div>		
 
         </div>
     </section>

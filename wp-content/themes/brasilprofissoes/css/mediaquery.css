@@ -78,6 +78,7 @@
 	#logo_rodape, .siga br, .area, .ad-home-noti, .publicidade {
 		display: none;
 	}
+	
 }
 @media (max-width: 767px) {
 	.areaexclusiva {
@@ -91,6 +92,7 @@
 	header form input {
 		width: inherit;
 	}
+	
 }
 @media (max-width: 600px) {
 	#news p {
