@@ -106,7 +106,7 @@
 						<div class="busca nopad col-md-4">
 							<form action="" method="post" name="form_busca_cursos">
 							
-							<a href="#" class=" col-md-3 link_vertodos">Ver todos</a>
+							<a href="#" class="col-md-3 link_vertodos">Ver todos</a>
 							
 							<input type="text" name="buscaCursos" id="buscaCursos" class="col-md-7" placeholder="busca espeficífica">
 							
@@ -139,7 +139,7 @@
 						</div>	
 					</div>
 					<div class="col-md-3 col-sm-2">
-						<div class=" img_cursos">
+						<div class="img_cursos">
 							<div class="blue">
 								<a href="#"><h3>Administrador Publico</h3></a>
 							</div>
