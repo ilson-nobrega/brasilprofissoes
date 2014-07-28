@@ -84,11 +84,14 @@
                                 while ($busca->have_posts()){ 
 
                                     $busca->the_post();
+                                    
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+                                    
                     ?>
                                 <div class="col-md-3 col-sm-2">
-            						<div class="img_cursos">
+            						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
             							<div class="blue">
-            								<a href="#"><h3><?php echo get_the_title(); ?></h3></a>
+            								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
             							</div>
             						</div>	
             					</div>
@@ -96,39 +99,10 @@
                                 }
                            }else{
 
-                                echo 'Sem nenhum post.'; 
+                                echo 'Nenhum post foi encontrado.'; 
                            }
                            wp_reset_postdata();
 					?>
-					
-<!-- 					<div class="col-md-3 col-sm-2"> -->
-<!-- 						<div class="img_cursos"> -->
-<!-- 							<div class="blue"> -->
-<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
-<!-- 							</div> -->
-<!-- 						</div>	 -->
-<!-- 					</div> -->
-<!-- 					<div class="col-md-3 col-sm-3"> -->
-<!-- 						<div class=" img_cursos"> -->
-<!-- 							<div class="blue"> -->
-<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
-<!-- 							</div> -->
-<!-- 						</div>	 -->
-<!-- 					</div> -->
-<!-- 					<div class="col-md-3 col-sm-2"> -->
-<!-- 						<div class=" img_cursos"> -->
-<!-- 							<div class="blue"> -->
-<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
-<!-- 							</div> -->
-<!-- 						</div>	 -->
-<!-- 					</div> -->
-<!-- 					<div class="col-md-3 col-sm-2"> -->
-<!-- 						<div class=" img_cursos"> -->
-<!-- 							<div class="blue"> -->
-<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
-<!-- 							</div> -->
-<!-- 						</div>	 -->
-<!-- 					</div>		 -->
 				</div>
 			</div>	
 
@@ -152,34 +126,47 @@
 					</div>
 					
 					
-					<div class="col-md-3 col-sm-2">
-						<div class="img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class=" img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-3 col-sm-2">
-						<div class=" img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-3 col-sm-2">
-						<div class="img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>		
+					<?php
+					   
+					   /**
+					    * Função que busca os posts de Cursos e os lista abaixo
+					    */
+					
+					       //Argumentos que será utilizado na busca
+        				   $args = array(
+        				   	   'post_type' => 'oportunidade',
+                               'posts_per_page' => '4',
+                               'orderby' => 'rand'
+        				   );
+
+                            //Instancia a classe de busca do Wordpress e passa os argumentos
+					       $busca = new WP_Query($args);
+					       
+					       
+					       if($busca->have_posts()){
+
+                                while ($busca->have_posts()){ 
+
+                                    $busca->the_post();
+                                    
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+                                    
+                    ?>
+                                <div class="col-md-3 col-sm-2">
+            						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
+            							<div class="blue">
+            								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
+            							</div>
+            						</div>	
+            					</div>
+                    <?php    
+                                }
+                           }else{
+
+                                echo 'Nenhum post foi encontrado.'; 
+                           }
+                           wp_reset_postdata();
+					?>		
 				</div>
 			</div>
 
