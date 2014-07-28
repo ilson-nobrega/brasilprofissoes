@@ -20,7 +20,43 @@
 		//Paginação nas noticias
 		require_once 'lib/paginacao.php';
 	
-	
+	/**
+	 * Função responsável por retornar os custom fields do post
+	 * Retorna false caso não possua nenhum custom field, e em caso positivo
+	 * retorna uma array com o titulo e o conteúdo do custom field
+	 */
+		function selecionaCustomFields(){
+		    
+		    $getPostCustomKeys = get_post_custom_keys(get_the_ID());
+		    
+		    foreach ($getPostCustomKeys as $key => $value) {
+		    
+		        $valueTrim = trim($value);
+		    
+		        if('_' == $valueTrim{0}){
+		            continue;
+		        }else{
+		            $valueFinal[] = $value;
+		        }
+		    
+		    }
+		    
+		    if(count($valueFinal)>0){
+		        
+    		    foreach ($valueFinal as $key => $value) {
+    		    
+    		        $getPostCustomValues = get_post_custom_values($value);
+    		    
+    		        $return[] = array('title'   => $valueFinal[$key],
+    		                        'content' => $getPostCustomValues[0]);
+
+    		    }
+    		    return $return;
+		    }
+		    
+		    return false;
+		}
+		
 	/**
 	 * Adiciona o separador de menu
 	 * (Ver a em /libs/separador-de-menu.php
