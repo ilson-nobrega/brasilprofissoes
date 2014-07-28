@@ -31,7 +31,7 @@
 	            'menu_position' => 51,
 	            'has_archive'	=> true,
 	            'rewrite'       => array('slug' => 'profissao'),
-	            'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields'),
+	            'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
 	            'taxonomies'    => array('post_tag')
 		    );
 		    
