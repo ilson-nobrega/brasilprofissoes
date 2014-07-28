@@ -71,39 +71,39 @@
     <?php
         break;
         default:
-             
     ?>
             
+        <section>
+            <div class="container">
+                <div class="row">
+                <br>
+                    <div class="col-md-3 col-sm-4 nopad">
+                        <div class="menu_esquerdo">
+                            <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-sm-8">
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                            <article>
+                                <h3><?php the_title(); ?></h3>
+                                <?php the_content(); ?>
+                            </article>
+                        <?php endwhile?>
+                        <?php else: ?>
+                            <article>
+                                <h2>Nada Encontrado</h2>
+                                <p>Lamentamos mas não foram encontrados artigos.</p>
+                            </article>            
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+        </section>
         
     <?php
         break;
         }
     ?>
-            <section>
-                <div class="container">
-                    <div class="row">
-                    <br>
-                        <div class="col-md-3 col-sm-4 nopad">
-                            <div class="menu_esquerdo">
-                                <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
-                            </div>
-                        </div>
-                        <div class="col-md-9 col-sm-8">
-                            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                                <article>
-                                    <h3><?php the_title(); ?></h3>
-                                    <?php the_content(); ?>
-                                </article>
-                            <?php endwhile?>
-                            <?php else: ?>
-                                <article>
-                                    <h2>Nada Encontrado</h2>
-                                    <p>Lamentamos mas não foram encontrados artigos.</p>
-                                </article>            
-                            <?php endif; ?>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
     
 <?php get_footer(); ?>
