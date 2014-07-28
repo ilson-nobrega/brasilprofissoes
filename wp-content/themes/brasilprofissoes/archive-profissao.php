@@ -46,7 +46,7 @@
 				<div class="cursos">
 					
 					<div class="titulo">
-						
+						<!-- Título e Busca Específica -->
 						<h3 class="nopad col-md-8"><span class="cor">Cursos</span></h3>
 						<div class="busca nopad col-md-4">
 							<form action="" method="post" name="form_busca_cursos">
@@ -62,38 +62,62 @@
 						</div>
 					</div>
 					
+					<?php
+					   
+					   /**
+					    * Função que busca os posts de Cursos e os lista abaixo
+					    */
+
+					       //Argumentos que será utilizado na busca
+        				   $args = array(
+        				   	   'post-type' => 'profissao'
+        				   );
+
+                            //Instancia a classe de busca do Wordpress e passa os argumentos
+					       $query = new WP_Query();
+					       
+                           while ($query->have_posts()) : $query->the_post();
+                    ?>
+                    Teste
+<!--                                 <div class="col-md-3 col-sm-2"> -->
+<!--             						<div class="img_cursos"> -->
+<!--             							<div class="blue"> -->
+            								<a href="#"><h3><?php get_the_title(); ?></h3></a>
+<!--             							</div> -->
+<!--             						</div>	 -->
+<!--             					</div> -->
+                    <?php    
+                           endwhile;
+					?>
 					
-					
-					
-					
-					<div class="col-md-3 col-sm-2">
-						<div class="img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-3 col-sm-3">
-						<div class=" img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-3 col-sm-2">
-						<div class=" img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>
-					<div class="col-md-3 col-sm-2">
-						<div class=" img_cursos">
-							<div class="blue">
-								<a href="#"><h3>Administrador Publico</h3></a>
-							</div>
-						</div>	
-					</div>		
+<!-- 					<div class="col-md-3 col-sm-2"> -->
+<!-- 						<div class="img_cursos"> -->
+<!-- 							<div class="blue"> -->
+<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
+<!-- 							</div> -->
+<!-- 						</div>	 -->
+<!-- 					</div> -->
+<!-- 					<div class="col-md-3 col-sm-3"> -->
+<!-- 						<div class=" img_cursos"> -->
+<!-- 							<div class="blue"> -->
+<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
+<!-- 							</div> -->
+<!-- 						</div>	 -->
+<!-- 					</div> -->
+<!-- 					<div class="col-md-3 col-sm-2"> -->
+<!-- 						<div class=" img_cursos"> -->
+<!-- 							<div class="blue"> -->
+<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
+<!-- 							</div> -->
+<!-- 						</div>	 -->
+<!-- 					</div> -->
+<!-- 					<div class="col-md-3 col-sm-2"> -->
+<!-- 						<div class=" img_cursos"> -->
+<!-- 							<div class="blue"> -->
+<!-- 								<a href="#"><h3>Administrador Publico</h3></a> -->
+<!-- 							</div> -->
+<!-- 						</div>	 -->
+<!-- 					</div>		 -->
 				</div>
 			</div>	
 

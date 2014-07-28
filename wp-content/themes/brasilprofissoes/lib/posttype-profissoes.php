@@ -20,7 +20,7 @@
 	            'search_items'       => __( 'Procurar Profissões', 'brasilprofissoes' ),
 	            'parent_item_colon'  => __( 'Profissão Principal:', 'brasilprofissoes' ),
 	            'not_found'          => __( 'Nenhuma profissão foi encontrada.', 'brasilprofissoes' ),
-	            'not_found_in_trash' => __( 'Nenhum profissão foi encontrada no lixo.', 'brasilprofissoes' )
+	            'not_found_in_trash' => __( 'Nenhuma profissão foi encontrada no lixo.', 'brasilprofissoes' )
 		    );
 		    
 		    //Define todos os argumentos que serão utilizados
