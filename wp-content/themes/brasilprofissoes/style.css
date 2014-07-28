@@ -561,7 +561,7 @@ button {
 .busca input{
 	padding: 6px;
 	border: none;
-	
+
 }
 
 .busca button{
@@ -640,3 +640,37 @@ button {
 }
 
 @import url("../brasilprofissoes/css/mediaquery.css");
+
+/*============================================ Responsabilidade Social ==================================================*/
+
+.instituto-itiquira .titulo,
+.instituto-serlivre .titulo{
+	background: url("../brasilprofissoes/img/titulo.png") repeat-x center 45px;
+}
+
+.carrossel-institutos .col-md-1,
+.carrossel-institutos .col-md-2{
+	padding: 0 8px 0 0;
+}
+
+.carrossel-institutos .col-md-2:hover,
+.carrossel-institutos .col-md-1:hover{
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.carrossel-institutos .btn-right{
+	padding-left: 22px;
+	margin: 0;
+}
+
+.carrossel-institutos .btn-left img{
+	padding-right: 22px;
+	margin: 0;
+}
+
+
+
+
+
+
