@@ -707,4 +707,50 @@ button {
 	margin-bottom: 25px;
 }
 
+/*============================================ Publicidade & Fale Conosco ==================================================*/
+
+.img_publicidade{
+	padding-right: 92px;
+}
+
+.formulario-parceiro input[type*="text"],
+.formulario-parceiro input[type*="tel"]{
+	padding: 12px;
+	border: 1px solid #a9a9a9;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.formulario-parceiro input[type*="checkbox"]{
+	height: 31px;
+	width: 3%;
+	margin-top: 17px;
+
+}
+
+.formulario-parceiro textarea{
+	border: 1px solid #a9a9a9;
+	width: 100%;
+	padding: 12px;
+	height: 243px;
+}
+
+.formulario-parceiro button{
+	background-color: #2bb673;
+	color: #fff;
+	border: 0;
+	font-size: 25px;
+	padding: 12px;
+}
+
+.formulario-parceiro .campo-botao{
+	background-color: #5b5b5a;
+}
+
+.campo-botao h3{
+	color: #fff;
+}
+
+
+
 
