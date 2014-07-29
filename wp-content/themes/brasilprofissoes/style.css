@@ -750,7 +750,11 @@ button {
 .campo-botao h3{
 	color: #fff;
 }
+/*============================================ Quem Somos ==================================================*/
 
-
-
-
+.texto-quem-somos p{
+	font-family: "Bandaregular";
+	font-size: 22px;
+	color: #5b5b5a;
+	text-align: justify;
+}
