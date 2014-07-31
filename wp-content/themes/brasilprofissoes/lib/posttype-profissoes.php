@@ -45,8 +45,8 @@
 			
 		    //Seta as labels da taxonomia
 		    $labels = array(
-	            'name'             =>  __('Categorias de Profissões'),
-	            'singular_name'    =>  __('Categoria de Profissões')
+	            'name'             =>  __('Profissões'),
+	            'singular_name'    =>  __('Profissões')
 		    );
 		    
 		    //Seta os argumentos da taxonomia
