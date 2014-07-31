@@ -1,7 +1,7 @@
 <?php
 
 	/**
-	 * Importa todas as bibliotecas necessárias
+	  * Importa todas as bibliotecas necessárias
 	 */
 		//Post Type
 		require_once 'lib/posttype-profissoes.php';

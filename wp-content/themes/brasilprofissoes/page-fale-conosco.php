@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     
-    <section>
+     <section>
         <div class="container">
         	<div class="row">
         			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banerfaleconosco.jpg" class="col-md-9 img_publicidade img-responsive">

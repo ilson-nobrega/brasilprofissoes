@@ -2,10 +2,10 @@
     
      <section>
          <div class="container">
-        	 <div class="row">
+        	  <div class="row">
             	 <br>
-        		 <div class="col-md-9 col-sm-8 noticias">
-                     <h2><?php single_cat_title( '', true ); ?></h2>
+        		  <div class="col-md-9 col-sm-8 noticias">
+                      <h2><?php single_cat_title( '', true ); ?></h2>
                      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             			  <article>
                              <a href="<?php the_permalink() ?>">

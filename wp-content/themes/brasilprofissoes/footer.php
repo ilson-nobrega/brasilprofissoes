@@ -1,7 +1,7 @@
     <footer>
         <div id="redes_busca" class="clearfix">
         	<div class="container">
-        		<div class="row">
+        		 <div class="row">
 	        		<div class="col-md-6 col-sm-6 col-xs-12" id="redes_sociais">
 	        			<p class="siga">Siga o Brasil<br>
 	        			Profissões<br>
