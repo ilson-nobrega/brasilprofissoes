@@ -34,20 +34,19 @@
         	<div class="row">
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>O Portal</dt>
-					<dd><a href="<?php echo home_url(); ?>/?page_id=11">Quem somos</a></dd>
-					<dd><a href="<?php echo home_url(); ?>/?page_id=13">Responsabilidade Social</a></dd>
-					<dd><a href="<?php echo home_url(); ?>/?page_id=15">Fale Conosco</a></dd>
-					<dd><a href="<?php echo home_url(); ?>/?page_id=18">Publicidade</a></dd>
-					<dd><a href="<?php echo home_url(); ?>/?page_id=20">Termos e Política</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/quem-somos">Quem somos</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/responsabilidade-social">Responsabilidade Social</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/fale-conosco">Fale Conosco</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/publicidade">Publicidade</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/termos-e-politica">Termos e Política</a></dd>
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Profissões</dt>
-					<dd><a href="#">Profissões de A a Z</a></dd>
-					<dd><a href="#">Técnicos</a></dd>
-					<dd><a href="#">Acadêmicos</a></dd>
-					<dd><a href="#">Públicas</a></dd>
-					<dd><a href="">Estados e Profissões</a></dd>
-					<dd><a href="#">Empreededores</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/profissao/">Profissões de A a Z</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/tecnicas/">Profissões Técnicas</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/academicas/">Profissões Acadêmicas</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/publicas/">Profissões Públicas</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/empreendedoras/">Profissões Empreededores</a></dd>
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Guias</dt>
