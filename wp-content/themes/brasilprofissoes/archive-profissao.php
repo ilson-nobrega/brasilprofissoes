@@ -49,7 +49,7 @@
     						</div>	
     					</div>
                     <?php endwhile?>
-                        <?php paginate(); ?>
+                        <?php //paginate(); ?>
                     <?php else: ?>
                         <article>
                             <h2>Nada Encontrado</h2>
