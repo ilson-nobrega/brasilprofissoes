@@ -42,10 +42,15 @@
                                 </tr>
                             </tbody>
                         </table>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-                        <article class="col-md-3 min-pad">
+                    <?php 
+                    
+                        if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+                        
+                        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+                    ?>
+                        <article class="col-md-3 min-pad" style="background: url(<?php echo $src[0]; ?> ) center !important;">
                             <a href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                                <h3><?php echo get_the_title(); ?></h3>
                             </a>
                         </article>
                     <?php endwhile?>
