@@ -758,3 +758,16 @@ button {
 	color: #5b5b5a;
 	text-align: justify;
 }
+
+/*============================================ Profissão especifica ==================================================*/
+
+.icone_descricao{
+	background-image: url("../brasilprofissoes/img/h4_descricao.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-top: 3px;
+}
+
+.texto_proficao p{
+	text-indent: 2em;
+}
