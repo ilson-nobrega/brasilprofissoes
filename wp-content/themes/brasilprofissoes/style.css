@@ -96,6 +96,24 @@ ul.page-numbers span.current {
 	border: 1px solid #666;
 	color: #444;
 }
+/*============================================ Menu Esquerdo ==================================================*/
+#menu-menu-profissoes li{
+	background-color: #2bb673;
+	width: 100%;
+	text-align: center;
+	padding: 16px;
+	margin-top: 10px;
+} 
+
+#menu-menu-profissoes li:hover{
+	background-color: #339966; 
+	cursor: pointer;
+}
+
+#menu-menu-profissoes li a{
+	color: #fff;
+	font-size: 18px;
+}
 /*============================================== Header =========================================================*/
 .area-pad {
 	margin: 10px 10px 10px 0;
@@ -757,4 +775,17 @@ button {
 	font-size: 22px;
 	color: #5b5b5a;
 	text-align: justify;
+}
+
+/*============================================ Profissão especifica ==================================================*/
+
+.icone_descricao{
+	background-image: url("../brasilprofissoes/img/h4_descricao.png");
+	background-repeat: no-repeat;
+	padding-left: 25px;
+	padding-top: 3px;
+}
+
+.texto_proficao p{
+	text-indent: 2em;
 }

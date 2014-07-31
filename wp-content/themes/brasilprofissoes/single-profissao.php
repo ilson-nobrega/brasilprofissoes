@@ -1,57 +1,55 @@
 <?php get_header(); ?>
-    
-    <section>
-        <div class="container">
-        	<div class="row">
-            	<br>
-            	<div class="col-md-3 col-sm-4 nopad">
-                    <div class="menu_esquerdo">
-                        <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
+<section>
+            <div class="container">
+                <div class="row pad-y texto_proficao">
+                
+                    <div class="col-md-3 col-sm-4 nopad">
+                        <div class="menu_esquerdo">
+                            <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
+                        </div>
                     </div>
+                    <div class="col-md-9 col-md-offset-3">
+    					
+    				</div>
+                              
+                    <?php if ( have_posts() ) :
+                    
+                              while ( have_posts() ) : the_post(); ?>
+                                <div class="col-md-9 col-md-offset-3">
+                                    <div class="col-md-8 nopad">
+                                        <h3><?php the_title(); ?></h3>
+                                        <p style="text-align: justify;"><?php the_content(); ?></p>  
+                                    </div>
+                                    <div class="col-md-4 nopad">
+                                        <img class=" nopad img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg">                      
+                                    </div>
+                                </div>
+                                    <?php 
+                                        $teste = selecionaCustomFields();
+                                        
+                                        if($teste != false){
+                                            foreach ($teste as $value):
+                                    ?>
+                                                <div class="col-md-9 col-md-offset-3">
+                            						<h4 class="icone_descricao"><?php echo $value['title']; ?>:</h4>
+                                                	<p style="text-align: justify;"><?php echo $value['content']; ?></p>
+                            					</div>
+                                    <?php    
+                                            endforeach;
+                                        }
+                                    ?>
+					<?php 
+					          endwhile;
+					      else:
+					?>
+                            <article class="col-md-9 col-md-offset-3">
+                                <h2>Nada Encontrado</h2>
+                                <p>Lamentamos mas não foram encontrados artigos.</p>
+                            </article>            
+                   <?php  endif; ?>
                 </div>
-        		<div class="col-md-9 col-sm-8">
-                    <h2>Todas</h2>
-                    <ul id="lista_123">
-						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m1.jpg"> Representa as Profissões. Quando o ícone <img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m1.jpg"> aparece em quadros de Cursos ou Oportunidades de Empregos, indica que há Profissões cadastradas no Portal relacionadas aos Cursos ou Oportunidades de Empregos em questão.
-						</li>
-						<li>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m2.jpg"> Representa as Profissões. Quando o ícone <img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m2.jpg"> aparece em quadros de Profissões ou Oportunidades de Empregos, indica que há Cursos disponíveis cadastrados no Portal relacionados às Profissões ou Oportunidades de Empregos em questão.
-						</li>
-			            <li>
-			            	<img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m3.jpg"> Representa as Profissões. Quando o ícone <img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m3.jpg"> aparece em quadros de Profissões ou Cursos, indica que há Oportunidades de Emprego disponíveis anunciadas no Portal, relacionadas às Profissões ou Cursos em questão.
-			            </li>
-		            </ul>
-                    <?php 
-                    
-                        if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-                    
-                        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
-                    ?>
-            			<!--article class="col-md-3 min-pad" style="background: url(<?php echo $src[0]; ?> ) center !important; height: 240px;">
-                            <a href="<?php the_permalink() ?>">
-                                <?php echo get_the_title(); ?>
-                            </a>
-                        </article-->
                         
-                        <div class="col-md-3 col-sm-2">
-    						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
-    							<div class="blue">
-    								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
-    							</div>
-    						</div>	
-    					</div>
-                    <?php endwhile?>
-                        <?php paginate(); ?>
-                    <?php else: ?>
-                        <article>
-                            <h2>Nada Encontrado</h2>
-                            <p>Lamentamos mas não foram encontrados artigos.</p>
-                        </article>            
-                    <?php endif; ?>
-                </div>
-        	</div>
-        	<div class="row pad-y">
+                <div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
         	</div>
 			
@@ -162,7 +160,7 @@
 
                                     $busca->the_post();
                                     
-                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '290', '220' ), true, '' );
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
                                 <div class="col-md-3 col-sm-2">
@@ -181,9 +179,9 @@
                            wp_reset_postdata();
 					?>		
 				</div>
-			</div>
+			</div>        
+                
 
-        </div>
-    </section>
-    
+            </div>
+        </section>
 <?php get_footer(); ?>
