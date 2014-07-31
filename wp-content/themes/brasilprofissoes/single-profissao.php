@@ -8,30 +8,25 @@
                             <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
                         </div>
                     </div>
-                    <div class="col-md-9 col-md-offset-3">
-    					
-    				</div>
-                              
                     <?php if ( have_posts() ) :
                     
                               while ( have_posts() ) : the_post(); ?>
-                                <div class="col-md-9 col-md-offset-3">
-                                    <div class="col-md-8 nopad">
-                                        <h3><?php the_title(); ?></h3>
-                                        <p style="text-align: justify;"><?php the_content(); ?></p>  
-                                    </div>
-                                    <div class="col-md-4 nopad">
-                                        <img class=" nopad img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg">                      
-                                    </div>
+                            <article class="col-md-9">
+                                <div class="col-md-9">
+                                    <h3><?php the_title(); ?></h3>
+                                    <p style="text-align: justify;">
+                                    <?php the_content(); ?>
+                                    </p> 
                                 </div>
+                                
                                     <?php 
                                         $teste = selecionaCustomFields();
                                         
                                         if($teste != false){
                                             foreach ($teste as $value):
                                     ?>
-                                                <div class="col-md-9 col-md-offset-3">
-                            						<h4 class="icone_descricao"><?php echo $value['title']; ?>:</h4>
+                                                <div class="col-md-9">
+                            						<h4 class="icone_descricao"><?php echo $value['title']; ?></h4>
                                                 	<p style="text-align: justify;"><?php echo $value['content']; ?></p>
                             					</div>
                                     <?php    
@@ -42,7 +37,6 @@
 					          endwhile;
 					      else:
 					?>
-                            <article class="col-md-9 col-md-offset-3">
                                 <h2>Nada Encontrado</h2>
                                 <p>Lamentamos mas não foram encontrados artigos.</p>
                             </article>            
