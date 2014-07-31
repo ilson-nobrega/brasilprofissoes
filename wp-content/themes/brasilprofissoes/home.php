@@ -3,7 +3,8 @@
     <section>
         <div class="container">
         	<div class="row">
-	        	<div class="col-md-9 col-sm-9 gray" style="height:516px;">
+	        	<div class="col-md-9 col-sm-9 nopad gray" style="height:516px;">
+	        		<?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
 	        		<!--inicio slider-->
 	        		<!-- <div class="slider">
 				<div id="main-photo-slider" class="csw">
