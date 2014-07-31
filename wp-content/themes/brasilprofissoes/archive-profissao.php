@@ -40,12 +40,7 @@
                     
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                     ?>
-            			<!--article class="col-md-3 min-pad" style="background: url(<?php echo $src[0]; ?> ) center !important; height: 240px;">
-                            <a href="<?php the_permalink() ?>">
-                                <?php echo get_the_title(); ?>
-                            </a>
-                        </article-->
-                        
+                       
                         <div class="col-md-3 col-sm-2">
     						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
     							<div class="blue">
