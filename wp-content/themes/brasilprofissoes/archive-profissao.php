@@ -4,7 +4,7 @@
         <div class="container">
         	<div class="row">
             	<br>
-            	<div class="col-md-3 col-sm-4 nopad">
+            	 <div class="col-md-3 col-sm-4 nopad">
                     <div class="menu_esquerdo">
                         <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
                     </div>

@@ -3,7 +3,7 @@
     /**
      * Cria o Post-Type personalizado de Guias
      */
-        function cria_post_type_guias(){
+         function cria_post_type_guias(){
             	
             register_post_type('guias',
                 array(

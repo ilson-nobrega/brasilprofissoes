@@ -3,7 +3,7 @@
     <section>
         <div class="container">
             <div class="row politica-inicio">
-            	<div class="col-md-9 col-sm-9">
+            	 <div class="col-md-9 col-sm-9">
                     <img src="<?php echo get_stylesheet_directory_uri() ?>/img/termos.jpg" class="img-responsive">
                 </div>
                 <div class="col-md-3 nopad col-sm-3">

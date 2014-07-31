@@ -1,5 +1,5 @@
 <?php get_header(); 
-    $categoria = get_the_category();
+     $categoria = get_the_category();
 
     switch ($categoria['0']->term_id) {
         //Parceiros
