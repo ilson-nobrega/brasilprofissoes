@@ -22,12 +22,25 @@
 			            	<img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m3.jpg"> Representa as Profissões. Quando o ícone <img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto_m3.jpg"> aparece em quadros de Profissões ou Cursos, indica que há Oportunidades de Emprego disponíveis anunciadas no Portal, relacionadas às Profissões ou Cursos em questão.
 			            </li>
 		            </ul>
-                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            			<article class="col-md-3 min-pad">
+                    <?php 
+                    
+                        if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+                    
+                        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+                    ?>
+            			<!--article class="col-md-3 min-pad" style="background: url(<?php echo $src[0]; ?> ) center !important; height: 240px;">
                             <a href="<?php the_permalink() ?>">
-                                <?php the_post_thumbnail('thumbnail', array('class' => 'img-responsive')); ?>
+                                <?php echo get_the_title(); ?>
                             </a>
-                        </article>
+                        </article-->
+                        
+                        <div class="col-md-3 col-sm-2">
+    						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
+    							<div class="blue">
+    								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
+    							</div>
+    						</div>	
+    					</div>
                     <?php endwhile?>
                         <?php paginate(); ?>
                     <?php else: ?>
@@ -149,7 +162,7 @@
 
                                     $busca->the_post();
                                     
-                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '290', '220' ), true, '' );
                                     
                     ?>
                                 <div class="col-md-3 col-sm-2">
