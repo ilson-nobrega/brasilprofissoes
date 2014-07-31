@@ -8,7 +8,7 @@
                             <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
                         </div>
                     </div>
-                    <?php if ( have_posts() ) :
+                    <?php if (have_posts()):
                     
                               while ( have_posts() ) : the_post(); ?>
                             <article class="col-md-9">
@@ -25,7 +25,7 @@
                                         if($teste != false){
                                             foreach ($teste as $value):
                                     ?>
-                                                <div class="col-md-9">
+                                                 <div class="col-md-9">
                             						<h4 class="icone_descricao"><?php echo $value['title']; ?></h4>
                                                 	<p style="text-align: justify;"><?php echo $value['content']; ?></p>
                             					</div>
