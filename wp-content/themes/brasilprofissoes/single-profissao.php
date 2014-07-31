@@ -8,29 +8,22 @@
                             <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
                         </div>
                     </div>
-                    <div class="col-md-9 col-md-offset-3">
-                        <h3><?php the_title(); ?></h3>
-                        <p><?php the_content(); ?></p>                        
+                   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                    <div class="col-md-9">
+						<div class="col-md-8">
+                    	<h3><?php the_title(); ?></h3>
+             
+                    	
+                    	<h4 class="icone_descricao">Descrição:</h4>
+                    	<p><?php the_content(); ?></p>
+                    	
+                    	
+
+						
+						</div>
+						<img class="col-md-4 nopad img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg">
+                    	
                     </div>
-    					<img class="col-md-4 nopad img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg">
-                              
-                    <?php if ( have_posts() ) :
-                    
-                              while ( have_posts() ) : the_post(); ?>
-                                <div class="col-md-9 col-md-offset-3">
-            						<h4 class="icone_descricao">a:</h4>
-                                	<p>b</p>
-            					</div>
-					<?php 
-					          endwhile;
-					      else:
-					?>
-                            <article class="col-md-9 col-md-offset-3">
-                                <h2>Nada Encontrado</h2>
-                                <p>Lamentamos mas não foram encontrados artigos.</p>
-                            </article>            
-                   <?php  endif; ?>
-					
 
                    
 
@@ -87,8 +80,13 @@
 
 
                 </div>
-            
-                        
+                <?php endwhile?>
+                        <?php else: ?>
+                            <article class="col-md-9 col-md-offset-3">
+                                <h2>Nada Encontrado</h2>
+                                <p>Lamentamos mas não foram encontrados artigos.</p>
+                            </article>            
+                        <?php endif; ?>
                 <div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
         	</div>
