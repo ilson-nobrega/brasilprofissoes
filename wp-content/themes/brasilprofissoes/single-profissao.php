@@ -12,6 +12,7 @@
                         <h3><?php the_title(); ?></h3>
                         <p><?php the_content(); ?></p>                        
                     </div>
+                    
     					<img class="col-md-4 nopad img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg">
                               
                     <?php if ( have_posts() ) :
