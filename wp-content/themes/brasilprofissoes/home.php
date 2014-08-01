@@ -3,42 +3,8 @@
     <section>
         <div class="container">
         	<div class="row">
-	        	<div class="col-md-9 col-sm-9 nopad gray" style="height:516px;">
+	        	<div class="col-md-9 col-sm-9 nopad">
 	        		<?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
-	        		<!--inicio slider-->
-	        		<!-- <div class="slider">
-				<div id="main-photo-slider" class="csw">
-					<div class="panelContainer">
-
-						<div class="panel" title="Panel 1">
-							<div class="wrapper">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners1.png" alt="temp" width="900" height="450" />
-							</div>
-						</div>
-						<div class="panel" title="Panel 2">
-							<div class="wrapper">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners2.png" alt="temp" width="900" height="450" />
-							</div>
-						</div>		
-						<div class="panel" title="Panel 3">
-							<div class="wrapper">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners3.png" alt="temp" width="900" height="450" />
-							</div>
-						</div>
-						<div class="panel" title="Panel 4">
-							<div class="wrapper"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners4.png" alt="temp" width="900" height="450" /></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="icones">
-					<div class="icone-slide"><a href="#1" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners1.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-					<div class="icone-slide"><a href="#2" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners2.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-					<div class="icone-slide"><a href="#3" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners3.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-					<div class="icone-slide"><a href="#4" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners4.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-				</div>
-			</div> -->
-	        		<!--fim slider-->
 	        	</div>
 	        	<img class="col-md-3 col-sm-3 nopad-right img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg">
         	</div>
