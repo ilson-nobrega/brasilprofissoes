@@ -16,16 +16,16 @@
 
 // ** Configurações do MySQL - Você pode pegar essas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'brasilprofissoeswp');
+define('DB_NAME', 'clientes_brasilprofissoes');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'root');
+define('DB_USER', 'clientes_bp');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', 'tekan');
+define('DB_PASSWORD', 'tekan1010');
 
 /** nome do host do MySQL */
-define('DB_HOST', 'ilson.servicosgerais');
+define('DB_HOST', 'cpmy0118.servidorwebfacil.com');
 
 /** Conjunto de caracteres do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8');
