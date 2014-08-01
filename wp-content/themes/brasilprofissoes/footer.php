@@ -53,15 +53,15 @@
 					<dd><a href="#">Vestibular</a></dd>
 					<dd><a href="#">ENEM</a></dd>
 					<dd><a href="#">PROUNI</a></dd>
-					<dd><a href="">FIES</a></dd>
+					<dd><a href="#">FIES</a></dd>
 					<dd><a href="#">FNADE</a></dd>
 					<dd><a href="#">SISU</a></dd>
 					<dd><a href="#">Cursinhos</a></dd>
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Notícias</dt>
-					<dd><a href="<?php echo home_url(); ?>/?cat=10">Notícias</a></dd>
-					<dd><a href="<?php echo home_url(); ?>/?cat=10">Blog</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/category/noticias/">Notícias</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/category/noticias/">Blog</a></dd>
 					<dt>Cursos</dt>
 					<dd><a href="#">Buscar curso</a></dd>
 					<dd><a href="#">Ver Todos</a></dd>
