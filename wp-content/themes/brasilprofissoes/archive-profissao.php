@@ -10,7 +10,7 @@
                     </div>
                 </div>
         		<div class="col-md-9 col-sm-8">
-                    <h2>Todas</h2>
+                    <h2>Profissões de A a Z</h2>
                      <table class="table table-hover">
                             
                             <thead>

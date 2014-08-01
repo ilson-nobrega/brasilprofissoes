@@ -46,7 +46,7 @@
 					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/tecnicas/">Profissões Técnicas</a></dd>
 					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/academicas/">Profissões Acadêmicas</a></dd>
 					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/publicas/">Profissões Públicas</a></dd>
-					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/empreendedoras/">Profissões Empreededores</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/categoria-de-profissoes/empreendedoras/">Profissões Empreededoras</a></dd>
 				</dl>
 				<dl class="col-md-2 col-sm-3 col-xs-6 sitemap">
 					<dt>Guias</dt>

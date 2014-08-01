@@ -15,7 +15,14 @@
                                 <div class="col-md-9">
                                     <h3><?php the_title(); ?></h3>
                                     <p style="text-align: justify;">
-                                    <?php the_content(); ?>
+                                    <?php 
+                                    
+                                        $content = apply_filters( 'the_content', get_the_content() );
+                                        $content = str_replace( ']]>', ']]&gt;', $content );
+                                        $content = strip_tags($content);
+                                        echo $content;
+                                    
+                                    ?>
                                     </p> 
                                 </div>
                                 
