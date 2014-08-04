@@ -788,11 +788,14 @@ button {
 
 .formulario-parceiro .campo-botao{
 	background-color: #5b5b5a;
+	margin-bottom: 2px;
 }
 
 .campo-botao h3{
 	color: #fff;
 }
+
+
 /*============================================ Quem Somos ==================================================*/
 
 .texto-quem-somos p{
