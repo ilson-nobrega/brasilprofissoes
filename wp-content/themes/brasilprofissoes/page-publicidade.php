@@ -25,6 +25,9 @@
 							<textarea name="menssagem" placeholder="Menssagem"></textarea>
 						</div>
 						<div class="col-md-12 pad-y campo-botao">
+							<input type="checkbox" name="novidades" class="col-md-1"><h3 class="col-md-8">Desejo fazer o download do media kit</h3>
+						</div>
+						<div class="col-md-12 pad-y campo-botao">
 							<input type="checkbox" name="novidades" class="col-md-1"><h3 class="col-md-8">Desejo receber novidades e promoções do Brasil Profissões</h3>
 							<button type="submit" class="col-md-2 col-md-offset-1">Enviar</button>	
 						</div>
