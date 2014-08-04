@@ -28,6 +28,12 @@
 	.noti-posts img {
 		height: 168px;
 	}
+	.lista-profissoes p {
+		font-family: 'Open Sans Condensed', sans-serif;
+	}
+	.lista-profissoes a {
+		height: 170px;
+	}
 	header #link_redes, .acessibilidade {
 		display: none;
 	}

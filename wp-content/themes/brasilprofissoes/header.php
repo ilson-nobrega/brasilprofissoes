@@ -13,6 +13,7 @@
 	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider/jquery-easing-compatibility.1.2.pack.js"></script>
 	<script language="javascript" type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/js/slider/coda-slider.1.1.1.pack.js"></script>
     
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico" />
     

@@ -15,7 +15,7 @@
                         <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
                     </div>
                 </div>
-        		<div class="col-md-9 col-sm-8">
+        		<div class="col-md-9 col-sm-8 nopad-right">
                     <h2>Profissões de A a Z</h2>
                      <table class="table table-hover">
                             
@@ -47,7 +47,7 @@
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                     ?>
                        
-                        <div class="col-md-3 col-sm-3 col-xs-6 lista-profissoes">
+                        <div class="col-md-3 col-sm-3 col-xs-6 lista-profissoes nopad-right">
     						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
     					</div>
                     <?php endwhile?>
