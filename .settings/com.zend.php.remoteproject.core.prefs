@@ -1,7 +1,7 @@
 LaunchURL=http\://server/folder
 Save\ Mode=ON_SAVE
-SelectedHostGUID=9cf4f8a9-08f1-4cad-b9f5-fe35ed282a1c
-UploadFolder=/public_html/brasilprofissoes
+SelectedHostGUID=43b41079-5cd9-4772-9460-0f8588e50735
+UploadFolder=/brasilprofissoes
 eclipse.preferences.version=1
 isLocalProjectEnabled=false
 isRemoteProjectEnabled=true
