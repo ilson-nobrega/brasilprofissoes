@@ -16,6 +16,7 @@
                             <div class="col-md-12">
 								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/bannercursos.jpg" class="img-responsive">
                             </div>
+                            
                             <thead>
                                 <tr>
                                     <th><h5>Icone</h5></th>
