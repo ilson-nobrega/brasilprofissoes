@@ -38,7 +38,11 @@
                                 </tr>
                             </tbody>
                         </table>
-                    <?php 
+                    
+                </div>
+        	</div>
+        	<div class="row pad-y">
+				<?php 
                     
                         if ( have_posts() ) : while ( have_posts() ) : the_post(); 
                     
@@ -60,7 +64,6 @@
                             <p>Lamentamos mas não foram encontrados artigos.</p>
                         </article>            
                     <?php endif; ?>
-                </div>
         	</div>
         	<div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
