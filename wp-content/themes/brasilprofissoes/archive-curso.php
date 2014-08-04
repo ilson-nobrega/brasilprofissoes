@@ -46,11 +46,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    
-                </div>
-        	</div>
-        	<div class="row pad-y">
-				<?php 
+                    <?php 
                     
                         if ( have_posts() ) : while ( have_posts() ) : the_post(); 
                     
@@ -72,6 +68,10 @@
                             <p>Lamentamos mas não foram encontrados artigos.</p>
                         </article>            
                     <?php endif; ?>
+                </div>
+        	</div>
+        	<div class="row pad-y">
+				
         	</div>
         	<div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
@@ -82,7 +82,7 @@
 					
 					<div class="titulo">
 						<!-- Título e Busca Específica -->
-						<h3 class="nopad col-md-8"><span class="cor">Cursos</span></h3>
+						<h3 class="nopad col-md-8"><span class="cor">Profissões</span></h3>
 						<div class="busca nopad col-md-4">
 							<form action="" method="post" name="form_busca_cursos">
 							
@@ -105,7 +105,7 @@
 					
 					       //Argumentos que será utilizado na busca
         				   $args = array(
-        				   	   'post_type' => 'curso',
+        				   	   'post_type' => 'profissao',
                                'posts_per_page' => '4',
                                'orderby' => 'rand'
         				   );
