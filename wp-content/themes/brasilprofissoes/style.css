@@ -836,3 +836,17 @@ button {
 .pesquisa-cursos p{
 	margin: 0;
 }
+
+
+
+/*============================================ paginação ==================================================*/
+
+
+ul.page-numbers a, ul.page-numbers span{
+	border:none;
+	background-image: none;
+}
+
+ul.page-numbers a:hover, ul.page-numbers span.current{
+	border:none;
+}
