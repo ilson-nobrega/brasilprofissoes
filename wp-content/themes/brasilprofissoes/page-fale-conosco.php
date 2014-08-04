@@ -3,7 +3,7 @@
      <section>
         <div class="container">
         	<div class="row">
-        			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banerfaleconosco.jpg" class="col-md-9 img_publicidade img-responsive">
+        			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banerfaleconosco.jpg" class="col-md-9 img_publicidade img-responsive" style="height: 516px;">
 					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado_menor.jpg" class="col-md-3 nopad img-responsive">
         	</div>	
 
@@ -23,6 +23,9 @@
 						</div>
 						<div class="col-md-6 aling-right">
 							<textarea name="menssagem" placeholder="Menssagem"></textarea>
+						</div>
+						<div class="col-md-12 pad-y campo-botao">
+							<input type="checkbox" name="novidades" class="col-md-1"><h3 class="col-md-8">Desejo fazer o download do media kit</h3>
 						</div>
 						<div class="col-md-12 pad-y campo-botao">
 							<input type="checkbox" name="novidades" class="col-md-1"><h3 class="col-md-8">Desejo receber novidades e promoções do Brasil Profissões</h3>

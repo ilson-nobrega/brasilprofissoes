@@ -4,7 +4,7 @@
         <div class="container">
             <div class="row politica-inicio">
             	 <div class="col-md-9 col-sm-9">
-                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/termos.jpg" class="img-responsive">
+                    <img src="<?php echo get_stylesheet_directory_uri() ?>/img/termos.jpg" class="img-responsive" style="height: 542px;">
                 </div>
                 <div class="col-md-3 nopad col-sm-3">
                     <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg" class="img-responsive"></a>
