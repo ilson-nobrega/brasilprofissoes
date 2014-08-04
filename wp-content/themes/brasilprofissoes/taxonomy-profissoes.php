@@ -10,13 +10,10 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-8">
-                    <h2><?php 
-                            $var = get_the_taxonomies();
-    
-                            $textoTratado = substr($var['profissoes'], 12);
-                            $textoTratado = str_replace(".", "", $textoTratado);
-
-                            echo $textoTratado;    
+                    <h2>
+                    <?php 
+                            $term =	$wp_query->queried_object;
+                            echo $term->name;
                     ?>
                         </h2>
                      <table class="table table-hover">
