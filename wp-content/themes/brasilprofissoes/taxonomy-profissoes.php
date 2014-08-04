@@ -10,13 +10,10 @@
                     </div>
                 </div>
                 <div class="col-md-9 col-sm-8">
-                    <h2><?php 
-                            $var = get_the_taxonomies();
-    
-                            $textoTratado = substr($var['profissoes'], 12);
-                            $textoTratado = str_replace(".", "", $textoTratado);
-
-                            echo $textoTratado;    
+                    <h2>
+                    <?php 
+                            $term =	$wp_query->queried_object;
+                            echo $term->name;
                     ?>
                         </h2>
                      <table class="table table-hover">
@@ -48,12 +45,8 @@
                         
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                     ?>
-                        <div class="col-md-3 col-sm-2">
-                            <div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
-                                <div class="blue">
-                                    <a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
-                                </div>
-                            </div>  
+                        <div class="col-md-3 col-sm-2 lista-profissoes">
+                            <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a> 
                         </div>
                         <!--article class="col-md-3 min-pad" style="background: url(<?php echo $src[0]; ?> ) center !important;">
                             <a href="<?php the_permalink() ?>">
@@ -120,12 +113,8 @@
                                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
-                                <div class="col-md-3 col-sm-2">
-                                    <div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
-                                        <div class="blue">
-                                            <a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
-                                        </div>
-                                    </div>  
+                                <div class="col-md-3 col-sm-2 lista-profissoes">
+                                   <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
                                 </div>
                     <?php    
                                 }
@@ -184,12 +173,8 @@
                                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
-                                <div class="col-md-3 col-sm-2">
-                                    <div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
-                                        <div class="blue">
-                                            <a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
-                                        </div>
-                                    </div>  
+                                <div class="col-md-3 col-sm-2 lista-profisssoes">
+                                    <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a> 
                                 </div>
                     <?php    
                                 }
