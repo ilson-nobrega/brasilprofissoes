@@ -6,7 +6,7 @@
             	<br>
             	 <div class="col-md-3 col-sm-4 nopad">
                     <div class="menu_esquerdo">
-                        <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
+                        <?php dynamic_sidebar( 'menu-cursos' ); ?>
                     </div>
                 </div>
         		<div class="col-md-9 col-sm-8">
