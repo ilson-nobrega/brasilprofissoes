@@ -1,12 +1,20 @@
 <?php get_header(); ?>
-    
+ 
     <section>
         <div class="container">
         	<div class="row">
             	<br>
             	 <div class="col-md-3 col-sm-4 nopad">
+                   <h2>Cursos</h2>
                     <div class="menu_esquerdo">
                         <?php dynamic_sidebar( 'menu-cursos' ); ?>
+                    </div>
+                    
+                    <div class="pesquisa-cursos col-md-12">
+                    	<form action="" method="post" accept-charset="utf-8">
+                    		<input type="text" name="pesquisa_curso" id="input_pesquisa_curso" class="col-md-9">
+                    		<button type="submit" class="col-md-3"><p class="fa fa-search fa-2x"></p></button>
+                    	</form>
                     </div>
                 </div>
         		<div class="col-md-9 col-sm-8">
@@ -63,6 +71,9 @@
                 </div>
         	</div>
         	<div class="row pad-y">
+				
+        	</div>
+        	<div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
         	</div>
 			
@@ -71,7 +82,7 @@
 					
 					<div class="titulo">
 						<!-- Título e Busca Específica -->
-						<h3 class="nopad col-md-8"><span class="cor">Cursos</span></h3>
+						<h3 class="nopad col-md-8"><span class="cor">Profissões</span></h3>
 						<div class="busca nopad col-md-4">
 							<form action="" method="post" name="form_busca_cursos">
 							
@@ -94,7 +105,7 @@
 					
 					       //Argumentos que será utilizado na busca
         				   $args = array(
-        				   	   'post_type' => 'curso',
+        				   	   'post_type' => 'profissao',
                                'posts_per_page' => '4',
                                'orderby' => 'rand'
         				   );

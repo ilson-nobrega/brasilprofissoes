@@ -279,6 +279,6 @@ register_sidebar( array(
     'description'  => __( 'Campo para o menu de cursos.' ),
     'before_widget' => '<div>',
     'after_widget'  => '</div>',
-    'before_title' => '<h3>',
-    'after_title'  => '</h3>',
+    'before_title' => '<h4>',
+    'after_title'  => '</h4>',
 ) );
