@@ -41,7 +41,7 @@
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                     ?>
                        
-                        <div class="col-md-3 col-sm-2">
+                        <div class="col-md-3 col-sm-3 col-xs-6">
     						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
     							<div class="blue">
     								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
@@ -108,7 +108,7 @@
                                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
-                                <div class="col-md-3 col-sm-2">
+                                <div class="col-md-3 col-sm-3">
             						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
             							<div class="blue">
             								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
