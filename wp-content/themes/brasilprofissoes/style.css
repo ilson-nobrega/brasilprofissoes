@@ -789,3 +789,25 @@ button {
 .texto_proficao p{
 	text-indent: 2em;
 }
+
+/*============================================ Cursos ==================================================*/
+
+.pesquisa-cursos{
+	background-color: #cccccc ;
+	padding: 10px;
+
+}
+
+.pesquisa-cursos input{
+	padding: 5px;
+	border: 0;
+}
+
+.pesquisa-cursos button{
+	background-color: transparent;
+	border:0;
+}
+
+.pesquisa-cursos p{
+	margin: 0;
+}

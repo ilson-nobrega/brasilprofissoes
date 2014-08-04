@@ -1,12 +1,20 @@
 <?php get_header(); ?>
-    
+ 
     <section>
         <div class="container">
         	<div class="row">
             	<br>
             	 <div class="col-md-3 col-sm-4 nopad">
+                   <h2>Cursos</h2>
                     <div class="menu_esquerdo">
                         <?php dynamic_sidebar( 'menu-cursos' ); ?>
+                    </div>
+                    
+                    <div class="pesquisa-cursos col-md-12">
+                    	<form action="" method="post" accept-charset="utf-8">
+                    		<input type="text" name="pesquisa_curso" id="input_pesquisa_curso" class="col-md-9">
+                    		<button type="submit" class="col-md-3"><p class="fa fa-search fa-2x"></p></button>
+                    	</form>
                     </div>
                 </div>
         		<div class="col-md-9 col-sm-8">
