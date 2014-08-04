@@ -3,42 +3,8 @@
     <section>
         <div class="container">
         	<div class="row">
-	        	<div class="col-md-9 col-sm-9 nopad gray" style="height:516px;">
+	        	<div class="col-md-9 col-sm-9 nopad">
 	        		<?php echo do_shortcode('[wonderplugin_slider id="1"]'); ?>
-	        		<!--inicio slider-->
-	        		<!-- <div class="slider">
-				<div id="main-photo-slider" class="csw">
-					<div class="panelContainer">
-
-						<div class="panel" title="Panel 1">
-							<div class="wrapper">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners1.png" alt="temp" width="900" height="450" />
-							</div>
-						</div>
-						<div class="panel" title="Panel 2">
-							<div class="wrapper">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners2.png" alt="temp" width="900" height="450" />
-							</div>
-						</div>		
-						<div class="panel" title="Panel 3">
-							<div class="wrapper">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners3.png" alt="temp" width="900" height="450" />
-							</div>
-						</div>
-						<div class="panel" title="Panel 4">
-							<div class="wrapper"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners4.png" alt="temp" width="900" height="450" /></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="icones">
-					<div class="icone-slide"><a href="#1" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners1.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-					<div class="icone-slide"><a href="#2" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners2.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-					<div class="icone-slide"><a href="#3" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners3.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-					<div class="icone-slide"><a href="#4" class="cross-link"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/banners4.png" width="225" height="133" class="nav-thumb" alt="temp-thumb" /></a></div>
-				</div>
-			</div> -->
-	        		<!--fim slider-->
 	        	</div>
 	        	<img class="col-md-3 col-sm-3 nopad-right img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg">
         	</div>
@@ -46,16 +12,24 @@
         	<div class="row carreira">
 				<h1><p>Chegou a hora de encontrar a</p> <p>profissão certa e turbinar sua carreira:</p></h1>
 				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/proficoes_tecnicas.jpg" class="img-responsive"></a>
+					<a href="<?php echo home_url(); ?>/categoria-de-profissoes/tecnicas/">
+					   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/proficoes_tecnicas.jpg" class="img-responsive">
+					</a>
 				</div>	
 				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/academicas.jpg" class="img-responsive"></a>
+					<a href="<?php echo home_url(); ?>/categoria-de-profissoes/academicas/">
+					   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/academicas.jpg" class="img-responsive">
+					</a>
 				</div>
 				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/publicas.jpg" class="img-responsive"></a>
+					<a href="<?php echo home_url(); ?>/categoria-de-profissoes/publicas/">
+					   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/publicas.jpg" class="img-responsive">
+				    </a>
 				</div>
 				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/emprededorismo.jpg" class="img-responsive"></a>
+					<a href="<?php echo home_url(); ?>/categoria-de-profissoes/empreendedoras/">
+					   <img src="<?php echo get_stylesheet_directory_uri() ?>/img/emprededorismo.jpg" class="img-responsive">
+				    </a>
 				</div>
 				
 	        </div>
@@ -156,20 +130,45 @@
 				<div class="titulo">
 					<h3>Cursos em destaque</h3>
 				</div>
-				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/tecnico_administracao.jpg" class="img-responsive"></a>
-				</div> 
-				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/gerente_banco.jpg" class="img-responsive"></a>
-				</div>
-				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/juiz_direito.jpg" class="img-responsive"></a>
-				</div> 
-				<div class="col-md-3 col-sm-3">
-					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/curso_sebrae.jpg" class="img-responsive"></a>
-				</div> 
+			<?php 
+			
+        		/**
+        		 * Função que busca os posts de Cursos e os lista abaixo
+        		 */
+        			
+        		//Argumentos que será utilizado na busca
+        		$args = array(
+        		        'post_type' => 'curso',
+        		        'posts_per_page' => '4',
+        		        'orderby' => 'rand'
+        		);
+        		
+        		//Instancia a classe de busca do Wordpress e passa os argumentos
+        		$busca = new WP_Query($args);
+        		
+        		if($busca->have_posts()){
 
+                    while ($busca->have_posts()){
 
+                    $busca->the_post();
+                
+                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+			?>
+    			        <div class="col-md-3 col-sm-3">
+    						<div class="img_cursos" style="background: url(<?php echo $src[0]; ?> ) center !important;">
+    							<div class="blue">
+    								<a href="<?php echo the_permalink(); ?>"><h3><?php echo get_the_title(); ?></h3></a>
+    							</div>
+    						</div>	
+    					</div>
+            <?php
+                    }
+                }else{
+
+                    echo 'Nenhum post foi encontrado.';
+                }
+                wp_reset_postdata();
+            ?>
 			</div>
 			<!-- Noticias -->
 			<div class="row pad-y noticias">
