@@ -51,7 +51,7 @@
     						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
     					</div>
                     <?php endwhile?>
-                        <?php //paginate(); ?>
+                        <?php paginate(); ?>
                     <?php else: ?>
                         <article>
                             <h2>Nada Encontrado</h2>
