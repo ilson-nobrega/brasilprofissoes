@@ -63,8 +63,8 @@
 					<dd><a href="<?php echo home_url(); ?>/category/noticias/">Notícias</a></dd>
 					<dd><a href="<?php echo home_url(); ?>/category/noticias/">Blog</a></dd>
 					<dt>Cursos</dt>
-					<dd><a href="#">Buscar curso</a></dd>
-					<dd><a href="#">Ver Todos</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/curso/">Buscar curso</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/curso/">Ver Todos</a></dd>
 				</dl>
 				<dl id="news" class="col-md-4 col-sm-12 col-xs-12">
 					<h1>Newsletter</h1>
