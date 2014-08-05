@@ -97,7 +97,7 @@ ul.page-numbers span.current {
 	color: #444;
 }
 /*============================================ Menu Esquerdo ==================================================*/
-#menu-menu-profissoes li,#menu-menu-cursos li,#menu-menu-noticias li{
+#menu-menu-profissoes li,#menu-menu-cursos li{
 	background-color: #2bb673;
 	width: 100%;
 	text-align: center;
@@ -105,16 +105,35 @@ ul.page-numbers span.current {
 	margin-top: 10px;
 } 
 
-#menu-menu-profissoes li:hover,#menu-menu-cursos li:hover,#menu-menu-noticias li:hover{
+#menu-menu-profissoes li:hover,#menu-menu-cursos li:hover{
 	background-color: #339966; 
 	cursor: pointer;
 }
 
-#menu-menu-profissoes li a,#menu-menu-cursos li a,#menu-menu-noticias li a{
+#menu-menu-profissoes li a,#menu-menu-cursos li a{
 	color: #fff;
 	font-size: 18px;
 }
 
+
+
+#menu-menu-noticias li{
+	background-color: #2bb673;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+} 
+
+#menu-menu-noticias li:hover{
+	background-color: #339966; 
+	cursor: pointer;
+}
+
+,#menu-menu-noticias li a{
+	color: #fff;
+	font-size: 14px;
+}
 
 
 /*============================================== Header =========================================================*/
