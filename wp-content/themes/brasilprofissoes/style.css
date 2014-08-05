@@ -130,7 +130,7 @@ ul.page-numbers span.current {
 	cursor: pointer;
 }
 
-,#menu-menu-noticias li a{
+#menu-menu-noticias li a{
 	color: #fff;
 	font-size: 14px;
 }
