@@ -11,28 +11,8 @@
                     <h3><img src="<?php echo get_stylesheet_directory_uri() ?>/img/instituto1.jpg" class="img-responsive"></h3>
                 </div>
 
-                    <div class="carrossel-institutos pad-y">
-                        <div class="col-md-1 btn-right bt-carrossel">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_carrocel.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2 img">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro1.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2 img">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro1.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2 img">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro1.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2 img">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro1.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2 img">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro1.jpg" class="img-responsive"></a>
-                        </div>
-                         <div class="col-md-1 btn-left bt-carrossel">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_carrocel2.jpg" class="img-responsive"></a>
-                        </div>
+                    <div class="carrossel-institutos pad-y texto-termos">
+                       <p>O Instituto Itiquira é uma Organização da Sociedade Civil de Interesse Público-OSCIP, laica, apartidária e sem fins lucrativos que tem por missão a defesa do Cerrado, do meio ambiente e da qualidade de vida no  no Nordeste Goiano, no Planalto Central e em todo o território brasileiro. <br> <a href="www.institutoitiquira.org.br" target="_blank">Saiba Mais </a></p>
 
                     </div>
 
@@ -42,28 +22,8 @@
                     <h3><img src="<?php echo get_stylesheet_directory_uri() ?>/img/instituto2.jpg" class="img-responsive"></h3>
                 </div>
                     
-                    <div class="carrossel-institutos pad-y">
-                        <div class="col-md-1 btn-right bt-carrossel">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_carrocel.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro6.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro6.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro6.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro6.jpg" class="img-responsive"></a>
-                        </div>
-                        <div class="col-md-2">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/carro6.jpg" class="img-responsive"></a>
-                        </div>
-                         <div class="col-md-1 btn-left bt-carrossel">
-                            <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_carrocel2.jpg" class="img-responsive"></a>
-                        </div>
+                    <div class="carrossel-institutos pad-y texto-termos">
+                        <p>O Instituto Ser Livre nasceu do desejo de um grupo de profissionais que atuaram , por cerca de vinte anos, no Sistema Penitenciário do Distrito Federal de compartilhar as suas experiências e aplicar seu conhecimento em atividades que trouxessem a oportunidade de reinserção social ao indivíduo em restrição de liberdade. <br> <a href="www.institutoitiquira.org.br" target="_blank">Saiba Mais </a></p>
 
                     </div>
 

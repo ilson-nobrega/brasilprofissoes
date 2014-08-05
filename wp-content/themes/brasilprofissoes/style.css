@@ -114,6 +114,28 @@ ul.page-numbers span.current {
 	color: #fff;
 	font-size: 18px;
 }
+
+
+
+#menu-menu-noticias li{
+	background-color: #2bb673;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+} 
+
+#menu-menu-noticias li:hover{
+	background-color: #339966; 
+	cursor: pointer;
+}
+
+,#menu-menu-noticias li a{
+	color: #fff;
+	font-size: 14px;
+}
+
+
 /*============================================== Header =========================================================*/
 .area-pad {
 	margin: 10px 10px 10px 0;
