@@ -3,8 +3,12 @@
      <section>
         <div class="container">
         	<div class="row">
-        			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banerfaleconosco.jpg" class="col-md-9 img_publicidade img-responsive" style="height: 516px;">
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado_menor.jpg" class="col-md-3 nopad img-responsive">
+        			<div class="col-md-9 img_publicidade">
+        				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banerfaleconosco.jpg" class="img-responsive">
+					</div>
+					<div class="col-md-3 nopad">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado_menor.jpg" class="img-responsive">
+        			</div>
         	</div>	
 
         	<div class="row pad-y formulario-parceiro">
