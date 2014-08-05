@@ -4,7 +4,7 @@
         <div class="container">
         	<div class="row">
         			<img src="<?php echo get_stylesheet_directory_uri() ?>/img/publicidade.jpg" class="col-md-9 img_publicidade img-responsive">
-					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado_menor.jpg" class="col-md-3 nopad img-responsive">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg" class="col-md-3 nopad img-responsive">
         	</div>	
 
         	<div class="row pad-y formulario-parceiro">
