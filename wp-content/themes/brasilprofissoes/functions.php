@@ -283,9 +283,11 @@ register_sidebar( array(
     'after_title'  => '</h4>',
 ) );
 register_sidebar( array(
-    'name'         => __( 'Menu Notícias' ),
-    'id'           => 'menunoticias',
-    'description'  => __( 'Campo para as subcategorias de notícias' ),
-	'before_title' => '<h3>',
-    'after_title'  => '</h3>',
+    'name'         => __( 'Categorias de notícias' ),
+    'id'           => 'menu-noticias',
+    'description'  => __( 'Campo para as categorias de notícias.' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title' => '<h4>',
+    'after_title'  => '</h4>',
 ) );
