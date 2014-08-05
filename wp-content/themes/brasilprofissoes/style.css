@@ -853,4 +853,5 @@ ul.page-numbers a, ul.page-numbers span{
 
 ul.page-numbers a:hover, ul.page-numbers span.current{
 	border:none;
+	color: #339966;
 }
