@@ -23,7 +23,7 @@
                 </div>
                     
                     <div class="carrossel-institutos pad-y texto-termos">
-                        <p>O Instituto Ser Livre nasceu do desejo de um grupo de profissionais que atuaram , por cerca de vinte anos, no Sistema Penitenciário do Distrito Federal de compartilhar as suas experiências e aplicar seu conhecimento em atividades que trouxessem a oportunidade de reinserção social ao indivíduo em restrição de liberdade.  <a href="www.institutoitiquira.org.br" target="_blank">Saiba Mais </a></p>
+                        <p>O Instituto Ser Livre nasceu do desejo de um grupo de profissionais que atuaram , por cerca de vinte anos, no Sistema Penitenciário do Distrito Federal de compartilhar as suas experiências e aplicar seu conhecimento em atividades que trouxessem a oportunidade de reinserção social ao indivíduo em restrição de liberdade. <br> <a href="www.institutoitiquira.org.br" target="_blank">Saiba Mais </a></p>
 
                     </div>
 
