@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-md-3 col-sm-4 nopad">
                             <div class="mais-lidas">
-                                <?php dynamic_sidebar( 'maislidas' ); ?>
+                                 <?php dynamic_sidebar( 'menu-noticias' ); ?>
                             </div>
                         </div>
                     </div>
