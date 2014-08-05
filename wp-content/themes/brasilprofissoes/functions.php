@@ -282,3 +282,10 @@ register_sidebar( array(
     'before_title' => '<h4>',
     'after_title'  => '</h4>',
 ) );
+register_sidebar( array(
+    'name'         => __( 'Menu Notícias' ),
+    'id'           => 'menunoticias',
+    'description'  => __( 'Campo para as subcategorias de notícias' ),
+	'before_title' => '<h3>',
+    'after_title'  => '</h3>',
+) );
