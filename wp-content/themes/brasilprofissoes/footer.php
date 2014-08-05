@@ -7,11 +7,11 @@
 	        			Profissões<br>
 	        			nas redes sociais</p>
 	        			<div id="link_redes">
-							<a class="fa fa-google-plus fa-3x" href="www.google.com"></a>
-							<a class="fa fa-youtube fa-3x" href="#"></a>
+							<a class="fa fa-google-plus fa-3x" href="https://plus.google.com/108636710965325415450/posts" target="_blank"></a>
+							<a class="fa fa-youtube fa-3x" href="https://www.youtube.com/channel/UCSLgA66g9PUir16vsEj9amQ" target="_blank"></a>
 							<a class="fa fa-linkedin fa-3x" href="#"></a>
-							<a class="fa fa-twitter fa-3x" href="#"></a>
-							<a class="fa fa-facebook-square fa-3x" href="#"></a>
+							<a class="fa fa-twitter fa-3x" href="https://twitter.com/bra_profissoes" target="_blank"></a>
+							<a class="fa fa-facebook-square fa-3x" href="https://www.facebook.com/brasilprofissoes" target="_blank"></a>
 						</div>
 						<div style="clear:both;"></div>
 	        		</div>
@@ -63,8 +63,8 @@
 					<dd><a href="<?php echo home_url(); ?>/category/noticias/">Notícias</a></dd>
 					<dd><a href="<?php echo home_url(); ?>/category/noticias/">Blog</a></dd>
 					<dt>Cursos</dt>
-					<dd><a href="#">Buscar curso</a></dd>
-					<dd><a href="#">Ver Todos</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/curso/">Buscar curso</a></dd>
+					<dd><a href="<?php echo home_url(); ?>/curso/">Ver Todos</a></dd>
 				</dl>
 				<dl id="news" class="col-md-4 col-sm-12 col-xs-12">
 					<h1>Newsletter</h1>
