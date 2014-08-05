@@ -7,7 +7,7 @@
         				<img src="<?php echo get_stylesheet_directory_uri() ?>/img/banerfaleconosco.jpg" class="img-responsive">
 					</div>
 					<div class="col-md-3 nopad">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado_menor.jpg" class="img-responsive">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg" class="img-responsive">
         			</div>
         	</div>	
 
