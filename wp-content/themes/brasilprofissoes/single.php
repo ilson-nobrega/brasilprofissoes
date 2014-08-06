@@ -29,12 +29,18 @@
                     </div>
                 </div>
             </section>
-    <?php
-        break;
+<!--     <?php
+        //break;
         
         //Noticias
-        case '10':
+        //case '10':
     ?>
+            conteudo -->
+    <?php
+        break;
+        default:
+    ?>
+            
             <section>
                 <div class="container">
                     <div class="row">
@@ -68,13 +74,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
-    <?php
-        break;
-        default:
-    ?>
-            
-a        
+            </section>       
     <?php
         break;
         }
