@@ -32,7 +32,7 @@
                      'menu_position' => 52,
                      'has_archive'	=> true,
                      'rewrite'       => array('slug' => 'guia'),
-                     'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields'),
+                     'supports'      => array('title', 'editor', 'thumbnail', 'custom-fields', 'revisions'),
                      'taxonomies'    => array('post_tag')
              );
              
