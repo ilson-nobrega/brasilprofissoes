@@ -146,12 +146,18 @@ ul.page-numbers span.current {
 	margin-top: 10px;
 }
 
-#menu-menu-guias:last-child,#menu-menu-guias:first-child{
+#menu-menu-guias li:last-child,#menu-menu-guias li:first-child{
 	background-color: #2bb673;
+	cursor: pointer;
+}
+
+#menu-menu-guias li:last-child:hover,#menu-menu-guias li:first-child:hover{
+	background-color:#339966;
+	cursor: pointer;
 }
 
 #menu-menu-guias li:hover{
-	background-color: #339966; 
+	background-color:#0a5c94; 
 	cursor: pointer;
 }
 
