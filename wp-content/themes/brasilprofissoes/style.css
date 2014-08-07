@@ -166,6 +166,20 @@ ul.page-numbers span.current {
 	font-size: 18px;
 }
 
+.noticias-enem .noticia_principal{
+	background: #f6f6f6;
+	padding: 10px;
+	height: 359px;
+	text-align: justify;
+}
+
+.noticias-enem .noticia-guia{
+	background: #f6f6f6;
+	border: 1px #000 solid;
+	height: 204px;
+	padding: 10px;
+}
+
 
 /*============================================== Header =========================================================*/
 .area-pad {

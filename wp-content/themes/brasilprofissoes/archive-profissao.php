@@ -73,9 +73,9 @@
 						<!-- Título e Busca Específica -->
 						<h3 class="nopad col-md-8"><span class="cor">Cursos</span></h3>
 						<div class="busca nopad col-md-4">
-							<form action="" method="get" name="form_busca_cursos">
+							<form action="<?php echo URL_TOTAL; ?>/curso/" method="post" name="form_busca_cursos">
 							
-							<a href="<?php echo URL_TOTAL; ?>/brasilprofissoes/curso/" class=" col-md-3 link_vertodos">Ver todos</a>
+							<a href="<?php echo URL_TOTAL; ?>/curso/" class=" col-md-3 link_vertodos">Ver todos</a>
 							     <input type="text" class="col-md-7" placeholder="busca específica" value="<?php get_search_query(); ?>" name="s" id="s" />
 							     <button class="" type="submit"></button>
 							</form>
@@ -131,11 +131,10 @@
 						
 						<h3 class="nopad col-md-8"><span class="cor">Oportunidades</span></h3>
 						<div class="busca nopad col-md-4">
-							<form action="" method="post" name="form_busca_cursos">
+							<form action="<?php echo URL_TOTAL; ?>/oportunidade/" method="post" name="form_busca_cursos">
 							
-							<a href="#" class="col-md-3 link_vertodos">Ver todos</a>
-							
-							<input type="text" name="buscaCursos" id="buscaCursos" class="col-md-7" placeholder="busca espeficífica">
+							<a href="<?php echo URL_TOTAL; ?>/oportunidade/" class=" col-md-3 link_vertodos">Ver todos</a>
+							     <input type="text" class="col-md-7" placeholder="busca específica" value="<?php get_search_query(); ?>" name="s" id="s" />
 							
 							<button class="" type="submit"></button>
 							</form>
