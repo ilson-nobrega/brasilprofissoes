@@ -7,6 +7,7 @@ RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /brasilprofissoes/index.php [L]
+RewriteCond %{QUERY_STRING} \\?s=([^&]+) [NC]
 </IfModule>
 
 # END WordPress
