@@ -16,7 +16,7 @@
                     </div>
                 </div>
         		<div class="col-md-9 col-sm-8 nopad-right">
-                    <?php echo do_shortcode('[azindexoutput]'); ?>
+                    
                     <h2>Profissões de A a Z</h2>
                      <table class="table table-hover">
                             
@@ -41,6 +41,8 @@
                                 </tr>
                             </tbody>
                         </table>
+                    
+                        <?php echo do_shortcode('[azindexoutput]'); ?>
                     <?php 
                     
                         if ( have_posts() ) : while ( have_posts() ) : the_post(); 
