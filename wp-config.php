@@ -33,6 +33,8 @@ define('DB_CHARSET', 'utf8');
 /** O tipo de collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
 
+define('URL_TOTAL', 'http://clientes.tekan.com.br/brasilprofissoes');
+
 /**#@+
  * Chaves únicas de autenticação e salts.
  *
