@@ -291,3 +291,12 @@ register_sidebar( array(
     'before_title' => '<h4>',
     'after_title'  => '</h4>',
 ) );
+register_sidebar( array(
+    'name'         => __( 'Categorias de guias' ),
+    'id'           => 'menu-guias',
+    'description'  => __( 'Campo para as categorias de guias' ),
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title' => '<h4>',
+    'after_title'  => '</h4>',
+) );
