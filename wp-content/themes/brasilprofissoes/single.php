@@ -67,8 +67,9 @@
                             <?php endif; ?>
                         </div>
                         <div class="col-md-3 col-sm-4 nopad">
+                            <?php dynamic_sidebar( 'menu-noticias' ); ?>
                             <div class="mais-lidas">
-                                <?php dynamic_sidebar( 'maislidas' ); ?>
+                                 <?php dynamic_sidebar( 'maislidas' ); ?>
                             </div>
                         </div>
                     </div>
