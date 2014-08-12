@@ -29,6 +29,9 @@ body {
 p {
 	font-family: Gotham-Light;
 }
+article li {
+	font-family: Gotham-Light;
+}
 ul, ol {
 	list-style-type: none;
 	padding: 0;
