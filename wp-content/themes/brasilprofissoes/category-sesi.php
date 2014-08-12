@@ -8,16 +8,6 @@
                     <div class="parceiro-logo" style="background: #0068b3;">
                         <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/sesi.jpg" alt="">
                     </div>
-                    <div class="parceiro-info">
-                        <h3>Projetos e eventos</h3>
-                        <a href="#">Cidades participantes</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <h3>Cursos e oportunidades</h3>
-                        <a href="#">Alavanche seu sucesso</a>
-                    </div>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8 nopad-right">
                     <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow( "sesi" ); } ?>
