@@ -29,6 +29,9 @@ body {
 p {
 	font-family: Gotham-Light;
 }
+article li {
+	font-family: Gotham-Light;
+}
 ul, ol {
 	list-style-type: none;
 	padding: 0;
@@ -592,6 +595,9 @@ button {
 	padding-top: 5px;
 	margin-top: 5px;
 }
+.oportunidadesboxes {
+	margin-bottom: 20px;
+}
 
 /*============================================ Profissões ================================================*/
 
@@ -651,10 +657,20 @@ button {
 }
 
 .busca button{
-	background-image: url("img/busca.png");
+	background-image: url("img/novabusca.png");
 	height: 32px;
 	width: 12%;
 	border: none;
+}
+button::before {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent #dddcdc transparent transparent;
+	margin-left: -15px;
 }
 
 .busca form{

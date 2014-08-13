@@ -14,6 +14,8 @@
 			    	
 						<div class="col-md-9 sobre-guias">
 							<div class="titulo">
+							
+							
 							<h3>Sobre Guias</h3>
 							</div>
 							<h4 class="icone_descricao">DESCRIÇÃO</h4>

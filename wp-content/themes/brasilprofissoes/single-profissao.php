@@ -8,13 +8,24 @@
                             <?php dynamic_sidebar( 'menu-esquerdo' ); ?>
                         </div>
                     </div>
+                    
+                    
+                                
                     <?php if (have_posts()):
                     
                               while ( have_posts() ) : the_post(); ?>
                             <article class="col-md-9">
-                                <div class="col-md-9">
-                                    <h3><?php the_title(); ?></h3>
+                                   
+
+                                <div class="col-md-6">
+                                   
+                                    <h3><?php the_title(); ?>
+
+                                    </h3>
+                                    
                                     <p style="text-align: justify;">
+                                    
+                                        
                                     <?php 
                                     
                                         $content = apply_filters( 'the_content', get_the_content() );
@@ -23,8 +34,16 @@
                                         echo $content;
                                     
                                     ?>
+                                    
                                     </p> 
+
+                                    
                                 </div>
+
+                                  <div class="btn col-md-3">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon_curso.png" class="col-md-6">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon_oportunidade.png" class="col-md-6">
+                                    </div>
                                 
                                     <?php 
                                         $teste = selecionaCustomFields();

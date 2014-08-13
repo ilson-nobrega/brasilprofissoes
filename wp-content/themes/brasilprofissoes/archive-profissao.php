@@ -110,7 +110,7 @@
                                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
-                                <div class="col-md-3 col-sm-3 lista-profissoes">
+                                <div class="min-pad col-md-3 col-sm-3 lista-profissoes">
             						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
             					</div>
                     <?php    
@@ -146,7 +146,7 @@
 					<?php
 					   
 					   /**
-					    * Função que busca os posts de Cursos e os lista abaixo
+					    * Função que busca os posts de Oportunidades e os lista abaixo
 					    */
 					
 					       //Argumentos que será utilizado na busca
@@ -166,10 +166,10 @@
 
                                     $busca->the_post();
                                     
-                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '290', '220' ), true, '' );
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
-                                <div class="col-md-3 col-sm-2">
+                                <div class="min-pad col-md-3 col-sm-2 lista-profissoes">
             						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
             					</div>
                     <?php    
@@ -179,7 +179,7 @@
                                 echo 'Nenhum post foi encontrado.'; 
                            }
                            wp_reset_postdata();
-					?>		
+					?>
 				</div>
 			</div>
 

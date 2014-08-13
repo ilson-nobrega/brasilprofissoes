@@ -8,19 +8,9 @@
                     <div class="parceiro-logo" style="background: #0068b3;">
                         <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/img/sesi.jpg" alt="">
                     </div>
-                    <div class="parceiro-info">
-                        <h3>Projetos e eventos</h3>
-                        <a href="#">Cidades participantes</a>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <h3>Cursos e oportunidades</h3>
-                        <a href="#">Alavanche seu sucesso</a>
-                    </div>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8 nopad-right">
-                    <?php if ( function_exists( 'meteor_slideshow' ) ) { meteor_slideshow( "sesi" ); } ?>
+                    <?php echo do_shortcode('[wonderplugin_slider id="2"]'); ?>
                 </div>
             </div>
         	<div class="row">
@@ -41,6 +31,35 @@
                         <p>Lamentamos mas não foram encontrados artigos.</p>
                     </article>            
                 <?php endif; ?>
+        	</div>
+        	<div class="row">
+        		<h2>Oportunidades</h2>
+        		<div class="oportunidadesboxes col-md-12 nopad">
+        				<?php	   
+					       //Argumentos que será utilizado na busca
+        				   $args = array(
+        				   	   'post_type' => 'oportunidade',
+                               'posts_per_page' => '4',
+                               'orderby' => 'rand'
+        				   );
+                            //Instancia a classe de busca do Wordpress e passa os argumentos
+					       $busca = new WP_Query($args);
+					       if($busca->have_posts()){
+                                while ($busca->have_posts()){ 
+                                    $busca->the_post();
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
+	                    ?>
+						<div class="col-md-3 col-sm-3 min-pad lista-profissoes">
+							<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
+						</div>
+                    	<?php
+                                }
+                           }else{
+                                echo 'Nenhum post foi encontrado.'; 
+                           }
+							wp_reset_postdata();
+						?>
+        		</div>
         	</div>
             <div class="row">
                 <div class="noticiasboxes col-md-10 col-xs-12 nopad-left">
