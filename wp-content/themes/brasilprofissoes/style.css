@@ -657,10 +657,20 @@ button {
 }
 
 .busca button{
-	background-image: url("img/busca.png");
+	background-image: url("img/novabusca.png");
 	height: 32px;
 	width: 12%;
 	border: none;
+}
+button::before {
+	content: "";
+	display: block;
+	width: 0px;
+	height: 0;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent #dddcdc transparent transparent;
+	margin-left: -15px;
 }
 
 .busca form{
