@@ -29,7 +29,7 @@ body {
 p {
 	font-family: Gotham-Light;
 }
-article li {
+article li, article div {
 	font-family: Gotham-Light;
 }
 ul, ol {
