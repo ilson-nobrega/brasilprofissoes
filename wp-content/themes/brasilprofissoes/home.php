@@ -154,7 +154,7 @@
                 
                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
 			?>
-    			        <div class="col-md-3 col-sm-3 lista-profissoes">
+    			        <div class="min-pad col-md-3 col-sm-3 lista-profissoes">
     						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
     					</div>
             <?php

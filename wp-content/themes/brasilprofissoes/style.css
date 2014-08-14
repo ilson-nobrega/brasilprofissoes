@@ -658,24 +658,27 @@ button {
 
 .busca button{
 	background-image: url("img/novabusca.png");
-	height: 32px;
-	width: 12%;
+	height: 30px;
+	width: 29px;
 	border: none;
+	padding: 0;
+	margin-left: 12px;
+	position: relative;
 }
 button::before {
 	content: "";
 	display: block;
-	width: 0px;
-	height: 0;
 	border-width: 8px;
 	border-style: solid;
 	border-color: transparent #dddcdc transparent transparent;
-	margin-left: -15px;
+	position: absolute;
+	left: -27px;
+	top: 8px;
 }
 
 .busca form{
 	padding-top: 10px;
-
+	padding-left: 10px;
 }
 
  .lista-profissoes a{
