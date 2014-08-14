@@ -19,18 +19,12 @@
                 </div>
         		<div class="col-md-9 col-sm-8">
                     
-                     
+                     <div class="col-md-12">
+						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/bannercursos.jpg" class="img-responsive">
+                     </div>
+
                      <table class="table table-hover">
-                            <div class="col-md-12">
-								<img src="<?php echo get_stylesheet_directory_uri() ?>/img/bannercursos.jpg" class="img-responsive">
-                            </div>
                             
-                            <thead>
-                                <tr>
-                                    <th><h5>Icone</h5></th>
-                                    <th><h5>Legenda</h5></th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto.jpg" class="img-responsive"></td>
