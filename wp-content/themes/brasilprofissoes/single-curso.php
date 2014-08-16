@@ -1,9 +1,9 @@
 <?php get_header(); ?>
- 
-    <section>
-        <div class="container">
-        	<div class="row">
-            	<br>
+<section>
+            <div class="container">
+                <div class="row pad-y texto_proficao">
+                
+                 <br>
             	 <div class="col-md-3 col-sm-4 nopad">
                    <h2>Cursos</h2>
                     <div class="menu_esquerdo">
@@ -17,53 +17,66 @@
                     	</form>
                     </div>
                 </div>
-        		<div class="col-md-9 col-sm-8">
+                                
+                    <?php if (have_posts()):
                     
-                     <div class="col-md-12">
-						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/bannercursos.jpg" class="img-responsive">
-                     </div>
+                              while ( have_posts() ) : the_post(); ?>
+                            <article class="col-md-9">
+                                   
 
-                     <table class="table table-hover">
-                            
-                            <tbody>
-                                <tr>
-                                    <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto.jpg" class="img-responsive"></td>
-                                    <th><p>Aparece em quadros de Cursos ou Oportunidades de Empregos, indica que há Profissões cadastradas no Portal relacionadas aos Cursos ou Oportunidades de Empregos em questão.</p></th>
-                                </tr>
-                                <tr>
-                                    <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto2.jpg" class="img-responsive"></td>
-                                    <th><p>aparece em quadros de Profissões ou Oportunidades de Empregos, indica que há Cursos disponíveis cadastrados no Portal relacionados às Profissões ou Oportunidades de Empregos em questão.</p></th>
-                                </tr>
-                                <tr>
-                                    <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto3.jpg" class="img-responsive"></td>
-                                    <th><p>aparece em quadros de Profissões ou Cursos, indica que há Oportunidades de Emprego disponíveis anunciadas no Portal, relacionadas às Profissões ou Cursos em questão.</p></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    <?php 
-                    
-                        if ( have_posts() ) : while ( have_posts() ) : the_post(); 
-                    
-                        $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
-                    ?>
-                       
-                        <div class="min-pad col-md-3 col-sm-2 lista-profissoes">
-    						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
-    					</div>
-                    <?php endwhile?>
-                        <?php //paginate(); ?>
-                    <?php else: ?>
-                        <article>
-                            <h2>Nada Encontrado</h2>
-                            <p>Lamentamos mas não foram encontrados artigos.</p>
-                        </article>            
-                    <?php endif; ?>
+                                <div class="col-md-6">
+                                   
+                                    <h3><?php the_title(); ?>
+
+                                    </h3>
+                                    
+                                    <p style="text-align: justify;">
+                                    
+                                        
+                                    <?php 
+                                    
+                                        $content = apply_filters( 'the_content', get_the_content() );
+                                        $content = str_replace( ']]>', ']]&gt;', $content );
+                                        $content = strip_tags($content);
+                                        echo $content;
+                                    
+                                    ?>
+                                    
+                                    </p> 
+
+                                    
+                                </div>
+
+                                  <div class="btn col-md-3">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon_curso.png" class="col-md-6">
+                                        <img src="<?php echo get_stylesheet_directory_uri() ?>/img/icon_oportunidade.png" class="col-md-6">
+                                    </div>
+                                
+                                    <?php 
+                                        $teste = selecionaCustomFields();
+                                        
+                                        if($teste != false){
+                                            foreach ($teste as $value):
+                                    ?>
+                                                 <div class="col-md-9">
+                            						<h4 class="icone_descricao"><?php echo $value['title']; ?></h4>
+                                                	<p style="text-align: justify;"><?php echo $value['content']; ?></p>
+                            					</div>
+                                    <?php    
+                                            endforeach;
+                                        }
+                                    ?>
+					<?php 
+					          endwhile;
+					      else:
+					?>
+                                <h2>Nada Encontrado</h2>
+                                <p>Lamentamos mas não foram encontrados artigos.</p>
+                            </article>            
+                   <?php  endif; ?>
                 </div>
-        	</div>
-        	<div class="row pad-y">
-				
-        	</div>
-        	<div class="row pad-y">
+                        
+                <div class="row pad-y">
         		<img style="width: 100%;" src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_fullpage.jpg">
         	</div>
 			
@@ -114,7 +127,7 @@
                                     
                     ?>
                                 <div class="min-pad col-md-3 col-sm-2 lista-profissoes">
-            						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
+            						 <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a> 
             					</div>
                     <?php    
                                 }
@@ -150,7 +163,7 @@
 					<?php
 					   
 					   /**
-					    * Função que busca os posts de Oportunidades e os lista abaixo
+					    * Função que busca os posts de Cursos e os lista abaixo
 					    */
 					
 					       //Argumentos que será utilizado na busca
@@ -170,11 +183,11 @@
 
                                     $busca->the_post();
                                     
-                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '290', '220' ), true, '' );
+                                    $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
                                 <div class="min-pad col-md-3 col-sm-2 lista-profissoes">
-            						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
+            						 <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a> 
             					</div>
                     <?php    
                                 }
@@ -185,9 +198,9 @@
                            wp_reset_postdata();
 					?>		
 				</div>
-			</div>
+			</div>        
+                
 
-        </div>
-    </section>
-    
+            </div>
+        </section>
 <?php get_footer(); ?>

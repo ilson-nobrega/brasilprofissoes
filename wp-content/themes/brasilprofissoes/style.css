@@ -29,7 +29,7 @@ body {
 p {
 	font-family: Gotham-Light;
 }
-article li {
+article li, article div {
 	font-family: Gotham-Light;
 }
 ul, ol {
@@ -99,6 +99,17 @@ ul.page-numbers span.current {
 	border: 1px solid #666;
 	color: #444;
 }
+.mais_lidas figure {
+	height: 260px;
+	overflow: hidden;
+	border: 1px solid #eee;
+	margin: 15px 0 20px;
+}
+.mais_lidas figure img {
+	width: 100%;
+	height: auto;
+}
+
 /*============================================ Menu Esquerdo ==================================================*/
 #menu-menu-profissoes li,#menu-menu-cursos li{
 	background-color: #2bb673;
@@ -467,6 +478,7 @@ dl a:hover {
 #rodape {
 	height: 55px;
 	background-color: #222121;
+	padding-top: 15px;
 	color: #FFF;
 	font-family: Arial, Helvetica, sans-serif;
 }
@@ -658,24 +670,27 @@ button {
 
 .busca button{
 	background-image: url("img/novabusca.png");
-	height: 32px;
-	width: 12%;
+	height: 30px;
+	width: 29px;
 	border: none;
+	padding: 0;
+	margin-left: 12px;
+	position: relative;
 }
 button::before {
 	content: "";
 	display: block;
-	width: 0px;
-	height: 0;
 	border-width: 8px;
 	border-style: solid;
 	border-color: transparent #dddcdc transparent transparent;
-	margin-left: -15px;
+	position: absolute;
+	left: -27px;
+	top: 8px;
 }
 
 .busca form{
 	padding-top: 10px;
-
+	padding-left: 10px;
 }
 
  .lista-profissoes a{

@@ -70,18 +70,13 @@
 					<div class="encontrar_vagas">
 						<h1>encontre</br> vagas e cursos</br> por instituições</h1>
 					</div>
-					
 				</div>
 				
 				<div class="col-md-7 col-sm-7">
 					<div class="carousel-parceiros">
 					<!--Nestas imagens há um css que deixa a altura delas com 289px no home.css linha 65 (tirar quando por o caroucel)-->	
 						<a href="?cat=24"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro1.jpg"  class="col-md-5 col-sm-5 nopad  img-responsive"></a>
-						
-						
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro2.jpg" class="col-md-3 col-sm-3 nopad img-responsive">
-					
-					
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro3.jpg" class="col-md-4 col-sm-4 nopad img-responsive">
 						
 					</div>
@@ -154,7 +149,7 @@
                 
                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
 			?>
-    			        <div class="col-md-3 col-sm-3 lista-profissoes">
+    			        <div class="min-pad col-md-3 col-sm-3 lista-profissoes">
     						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
     					</div>
             <?php
@@ -168,7 +163,7 @@
 			</div>
 			<!-- Noticias -->
 			<div class="row pad-y noticias">
-				<div class="col-md-5 col-sm-6">
+				<!-- <div class="col-md-5 col-sm-6">
 					<div class="ultimas_noticias">
 						<h1>Últimas Notícias</h1>
 						<figure>
@@ -211,8 +206,8 @@
 									</div>		
 							</div>
 					</div>
-					
 				</div>
+
 				<div class="col-md-5 col-sm-6">
 					<div class="mais_lidas">
 						<h1>Mais Lidas</h1>
@@ -255,7 +250,27 @@
 							</div>
 					</div>
 				</div>
-				<div class="col-md-2 col-sm-2 pad-y">
+				 -->
+				<div id="notihomebox" class="col-md-10 col-sm-10">
+					<?php
+						$notihomebox = get_posts('numberposts=4&category=10');
+						foreach($notihomebox as $post) :
+						setup_postdata($post);
+					?>
+					<div class="col-md-6 col-sm-6 mais_lidas">
+						<h2>
+							<a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">
+								<?php the_title(); ?>
+							</a>
+						</h2>
+						<figure><?php the_post_thumbnail( 'medium' ); ?></figure>
+						<?php the_excerpt(); ?>
+					</div>
+					<?php endforeach; ?>
+				</div>
+
+				
+				<div class="col-md-2 col-sm-2">
 					<div class="publicidade">
 						<h2>Publicidade</h2>
 						<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/microsoft_training.jpg" class="img-responsive"></a>
