@@ -88,7 +88,8 @@
                            $args = array(
                                'post_type' => 'curso',
                                'posts_per_page' => '4',
-                               'orderby' => 'rand'
+                               'orderby' => 'rand',
+							   'tag_name' => $term->name
                            );
 
                             //Instancia a classe de busca do Wordpress e passa os argumentos
