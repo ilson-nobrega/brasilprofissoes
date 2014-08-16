@@ -65,20 +65,17 @@
                 <div class="cursos">
                     
                     <div class="titulo">
-                        <!-- Título e Busca Específica -->
-                        <h3 class="nopad col-md-8"><span class="cor">Cursos</span></h3>
-                        <div class="busca nopad col-md-4">
-                            <form action="" method="post" name="form_busca_cursos">
-                            
-                            <a href="#" class=" col-md-3 link_vertodos">Ver todos</a>
-                            
-                            <input type="text" name="buscaCursos" id="buscaCursos" class="col-md-7" placeholder="busca espeficífica">
-                            
-                            <button class="" type="submit"></button>
-                            </form>
-                        </div>
-                        <div style="clear:both">
-                        </div>
+                    	<!-- Título e Busca Específica -->
+                    	<h3 class="nopad col-md-8"><span class="cor">Cursos</span></h3>
+						<div class="busca nopad col-md-4">
+							<form action="<?php echo URL_TOTAL; ?>/curso/" method="post" name="form_busca_cursos">
+							
+							<a href="<?php echo URL_TOTAL; ?>/curso/" class=" col-md-3 link_vertodos">Ver todos</a>
+							     <input type="text" class="col-md-7" placeholder="busca específica" value="<?php get_search_query(); ?>" name="s" id="s" />
+							     <button class="" type="submit"></button>
+							</form>
+						</div>
+						<div style="clear:both"></div>
                     </div>
                     
                     <?php

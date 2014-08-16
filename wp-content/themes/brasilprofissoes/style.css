@@ -30,6 +30,9 @@ p {
 	font-family: Gotham-Light;
 	text-indent: 50px !important;
 }
+article p {
+	text-indent: 40px !important;
+}
 article li, article div {
 	font-family: Gotham-Light;
 }
@@ -100,13 +103,26 @@ ul.page-numbers span.current {
 	border: 1px solid #666;
 	color: #444;
 }
-.mais_lidas figure {
-	height: 260px;
+.notihome {
+	background-color: #ededed;
+	border: 2px solid #dddcdc;
+	height: 155px;
+	margin-bottom: 20px;
+}
+.notihome figure {
+	margin-top: 14px;
+}
+.notitext {
+	height: 138px;
+	overflow: hidden;
+}
+.notihomedestak figure {
+	height: 250px;
 	overflow: hidden;
 	border: 1px solid #eee;
-	margin: 15px 0 20px;
+	margin-bottom: 10px;
 }
-.mais_lidas figure img {
+.notihomedestak figure img {
 	width: 100%;
 	height: auto;
 }
