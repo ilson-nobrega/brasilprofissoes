@@ -60,7 +60,7 @@ padding: 0;
 .intituicoes .carousel-parceiros{
 	height: 285px;
 	background-color: #ededed;
-	
+	overflow: hidden;
 }
 .carousel-parceiros img{
 /*Este css é temporario até que o caroucel seja colocado*/	

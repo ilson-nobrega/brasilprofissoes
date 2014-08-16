@@ -33,7 +33,8 @@
 				</div>
 				
 	        </div>
-		<!-- Caminhos futuros -->	
+	        
+		<!-- Caminhos futuros
 	        <div class="row pad-y caminhos_futuros">
 	        	<div class="col-md-9 col-sm-9">
 					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/caminhos_futuros.jpg" class="img-responsive"></a>	
@@ -63,26 +64,26 @@
 						  </form>
 					</div>
 				</div>	
-	        </div>
+	        </div> -->
+	        
 			<!-- instituições -->
-			<div class="row pad-y intituicoes">
-				<div class="col-md-5 col-sm-5">
+			<div class="row intituicoes pad-y">
+				<div class="nopad col-md-5 col-sm-5">
 					<div class="encontrar_vagas">
 						<h1>encontre</br> vagas e cursos</br> por instituições</h1>
 					</div>
 				</div>
 				
-				<div class="col-md-7 col-sm-7">
+				<div class="nopad col-md-7 col-sm-7">
 					<div class="carousel-parceiros">
 					<!--Nestas imagens há um css que deixa a altura delas com 289px no home.css linha 65 (tirar quando por o caroucel)-->	
 						<a href="?cat=24"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro1.jpg"  class="col-md-5 col-sm-5 nopad  img-responsive"></a>
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro2.jpg" class="col-md-3 col-sm-3 nopad img-responsive">
 						<img src="<?php echo get_stylesheet_directory_uri() ?>/img/parceiro3.jpg" class="col-md-4 col-sm-4 nopad img-responsive">
-						
 					</div>
 				</div>
-
 			</div>
+			
 			<!-- Busca por cursos -->
 			<div class="row pad-y busca_cursos">
 				<div class="titulo">
@@ -120,152 +121,91 @@
 				</div>
 			
 			</div>
+			
 			<!-- Cursos em destaque -->
 			<div class="row pad-y cursos_destaque">
 				<div class="titulo">
 					<h3>Cursos em destaque</h3>
 				</div>
-			<?php 
-			
-        		/**
-        		 * Função que busca os posts de Cursos e os lista abaixo
-        		 */
-        			
-        		//Argumentos que será utilizado na busca
-        		$args = array(
-        		        'post_type' => 'curso',
-        		        'posts_per_page' => '4',
-        		        'orderby' => 'rand'
-        		);
-        		
-        		//Instancia a classe de busca do Wordpress e passa os argumentos
-        		$busca = new WP_Query($args);
-        		
-        		if($busca->have_posts()){
-
-                    while ($busca->have_posts()){
-
-                    $busca->the_post();
-                
+				<?php 
+				
+	        		/**
+	        		 * Função que busca os posts de Cursos e os lista abaixo
+	        		 */
+	        			
+	        		//Argumentos que será utilizado na busca
+	        		$args = array(
+	        		        'post_type' => 'curso',
+	        		        'posts_per_page' => '4',
+	        		        'orderby' => 'rand'
+	        		);
+	        		
+	        		//Instancia a classe de busca do Wordpress e passa os argumentos
+	        		$busca = new WP_Query($args);
+	        		
+	        		if($busca->have_posts()){
+	
+	                    while ($busca->have_posts()){
+	
+	                    $busca->the_post();
+	                
                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
-			?>
-    			        <div class="min-pad col-md-3 col-sm-3 lista-profissoes">
-    						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
-    					</div>
-            <?php
-                    }
-                }else{
-
-                    echo 'Nenhum post foi encontrado.';
-                }
-                wp_reset_postdata();
-            ?>
+				?>
+    			<div class="min-pad col-md-3 col-sm-3 lista-profissoes">
+    				<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
+    			</div>
+	            <?php
+	                }}else{
+	                    echo 'Nenhum post foi encontrado.';
+	                } wp_reset_postdata();
+	            ?>
 			</div>
+			
 			<!-- Noticias -->
 			<div class="row pad-y noticias">
-				<!-- <div class="col-md-5 col-sm-6">
-					<div class="ultimas_noticias">
-						<h1>Últimas Notícias</h1>
-						<figure>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/Noticias.jpg" class="img-responsive">
-							<figcaption>09 de janeiro de 2013</figcaption>
-						</figure>
-							<div class="cursos_empregos">
-								<h3>Notícias sobre cursos e empregos</h3>
-								<p>Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora,
-		                           non adipiscing. Nulla nunc porta lorem</p>
-									
-									<div class="col-md-12 container_noticias">
-										
-										<div class="boxum pad-y">
-											
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
-											<div class="col-md-9 textobox">
-												<h4>Notícias sobre cursos e empregos</h4>
-												<p>09 de janeiro de 2013</p>
-
-												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
-												
-												
-											</div>
-										</div>
-
-										<div class="boxum pad-y">
-											
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
-											<div class="col-md-9 textobox">
-												<h4>Notícias sobre cursos e empregos</h4>
-												<p>09 de janeiro de 2013</p>
-
-												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
-												
-												
-											</div>
-										</div>
-										
-									</div>		
+				<div class="col-md-10 col-sm-10">
+					<h2 class="text-center">Notícias</h2>
+					<?php
+						$notihomedestak = get_posts('numberposts=2&category=10&featured=yes');
+						foreach($notihomedestak as $post) :
+						setup_postdata($post);
+					?>
+						<div class="col-md-6 col-sm-6">
+							<div class="notihomedestak">
+								<figure>
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'medium', array( 'class' => 'img-responsive' ) ); ?></a>
+								</figure>
+								<small><?php the_time('d/m/Y') ?></small>
+								<h4>
+									<a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">
+										<?php the_title(); ?>
+									</a>
+								</h4>
 							</div>
-					</div>
-				</div>
-
-				<div class="col-md-5 col-sm-6">
-					<div class="mais_lidas">
-						<h1>Mais Lidas</h1>
-						<figure>
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/img/mais_lidas.jpg" class="img-responsive">
-							<figcaption>09 de janeiro de 2013</figcaption>
-						</figure>
-							<div class="cursos_empregos">
-								<h3>Notícias sobre cursos e empregos</h3>
-								<p>Wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora,
-		                           non adipiscing. Nulla nunc porta lorem</p>
-									
-									<div class="col-md-12 container_noticias">
-										<div class="boxum pad-y">
-											
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
-											<div class="col-md-9 textobox">
-												<h4>Notícias sobre cursos e empregos</h4>
-												<p>09 de janeiro de 2013</p>
-
-												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
-												
-												
-											</div>
-										</div>
-
-										<div class="boxum pad-y">
-											
-											<img src="<?php echo get_stylesheet_directory_uri() ?>/img/img_noticias.jpg" class="col-md-3 nopad img-responsive">
-											<div class="col-md-9 textobox">
-												<h4>Notícias sobre cursos e empregos</h4>
-												<p>09 de janeiro de 2013</p>
-
-												<p>wisi quam lorem vestibulum nec nibh, sollicitudin volutpat at libero litora, non adipiscing. Nulla nunc porta lorem <a href="#" class="link1"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/bt_mais.png"></a></p>
-												
-												
-											</div>
-										</div>
-									</div>		
-							</div>
-					</div>
-				</div>
-				 -->
-				<div id="notihomebox" class="col-md-10 col-sm-10">
+						</div>
+					<?php endforeach; ?>
+					
+					
 					<?php
 						$notihomebox = get_posts('numberposts=4&category=10');
 						foreach($notihomebox as $post) :
 						setup_postdata($post);
 					?>
-					<div class="col-md-6 col-sm-6 mais_lidas">
-						<h2>
-							<a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">
-								<?php the_title(); ?>
-							</a>
-						</h2>
-						<figure><?php the_post_thumbnail( 'medium' ); ?></figure>
-						<?php the_excerpt(); ?>
-					</div>
+						<div class="col-md-6 col-sm-6">
+							<div class="col-md-12 notihome">
+								<figure class="col-md-3 nopad">
+									<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-responsive' ) ); ?></a>
+								</figure>
+								<div class="col-md-9 notitext">
+									<h4>
+										<a href="<?php the_permalink(); ?>" id="post-<?php the_ID(); ?>">
+											<?php the_title(); ?>
+										</a>
+									</h4>
+									<?php the_excerpt(); ?>
+								</div>
+							</div>
+						</div>
 					<?php endforeach; ?>
 				</div>
 
@@ -276,21 +216,17 @@
 						<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/microsoft_training.jpg" class="img-responsive"></a>
 					</div>
 				</div>
-
-
-
 			</div>
+			
 			<!-- Facebook -->
 			<div class="row pad-y">
-			<div class="titulo">
-				<h3>Curtam nossa fan page</h3>
-			</div>	
-			
+				<div class="titulo">
+					<h3>Curtam nossa fan page</h3>
+				</div>	
 				<iframe class="col-md-9 iframe_facebook" id="facebook" src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fbrasilprofissoes&amp;width=900&amp;height=300&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"></iframe>
-					
-					<div class="col-md-3 nopad">
-						<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg" class="img-responsive"></a>
-					</div>
+				<div class="col-md-3 nopad">
+					<a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ad_vertical.jpg" class="img-responsive"></a>
+				</div>
 			</div>		
 
         </div>
