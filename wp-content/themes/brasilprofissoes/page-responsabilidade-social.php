@@ -2,9 +2,19 @@
     
     <section>
         <div class="container">
-        	<div class="row">
+        	<!-- div class="row">
                 <img src="<?php echo get_stylesheet_directory_uri() ?>/img/responsasocial.jpg" class="img-respnsive col-md-12 col-sm-12 col-xs-12">
-            </div>
+            </div-->
+            <div class="row">
+					<div class="col-md-6">
+						<h1>Responsabilidade Social</h1>
+					                  
+						<p>O Portal mantém apoios e parcerias para a educação e acesso ao mercado,  com o Instituto Ser Livre , leva aos alunos de presídios cursos gratuitos online e certificados  e com Instituto Itiquira,  leva conteúdo e cursos para as escolas rurais em que atuam.</p>
+					</div>
+					<div class="col-md-6 nopad">
+					<img src="<?php echo get_stylesheet_directory_uri() ?>/img/mulher.jpg" class="img-responsive">
+					</div>
+            	</div>
 
             <div class="row pad-y instituto-itiquira">
                 <div class="titulo">

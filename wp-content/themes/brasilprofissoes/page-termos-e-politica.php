@@ -10,7 +10,7 @@
                     <a href="#"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/estado.jpg" class="img-responsive"></a>
                 </div>
                 <div class="col-md-10 col-md-offset-1 col-sm-11 pad-y">
-                   <p class="texto-termos text-justify">Esta política de privacidade estabelece a forma como Brasil Profissões usa e protege todas as informações que você fornecer no Brasil Profissões quando você usa este site. Brasil Profissões está empenhada em assegurar que sua privacidade é protegida. Nós estamos solicitando para você fornecer algumas informações através do qual você pode ser identificado quando se usa este site, então você pode ter certeza de que ela será usada somente em conformidade com esta declaração de privacidade. Brasil Profissões pode alterar esta política de tempos em tempos, atualizando esta página. Você deve verificar esta página de vez em quando para garantir que você esteja feliz com todas as mudanças. Esta política está em vigor desde de 2007.</p> 
+                   <p class="texto-termos text-justify">Esta política de privacidade estabelece a forma como Brasil Profissões usa e protege todas as informações que você fornecer quando você usa este site. Brasil Profissões está empenha-se em assegurar que sua privacidade seja protegida. Solicitamos para você algumas informações através da qual você pode ser identificado quando utilizar o site, então você pode ter certeza de que suas informações serão utilizadas  somente em conformidade com esta declaração de privacidade. Brasil Profissões pode alterar esta política de tempos em tempos, atualizando esta página. Você deve verificar esta página de vez em quando para garantir que você esteja feliz com todas as mudanças. Esta política está em vigor desde de 2007.</p>
                 </div>
             </div>
             <div class="row pad-y">
@@ -22,7 +22,7 @@
                     <p>Podemos recolher as seguintes informações:</p>
                         <ul class="lista_termos texto-termos">
                             <li>Nome e cargo;</li>
-                            <li>informações de Contato, incluindo o seu endereço de e-mail;</li>
+                            <li>Informações de Contato, incluindo o seu endereço de e-mail;</li>
                             <li>Informação demográfica, tais como código postal, preferências e interesses;</li>
                             <li>Outras informações relevantes para clientes e pesquisas e/ou ofertas.</li>
                         </ul>
