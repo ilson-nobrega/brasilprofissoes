@@ -1,11 +1,4 @@
 <?php get_header(); ?>
- <style type="text/css" media="screen">
- 
-
-
-
-
- </style>   
     <section>
         <div class="container">
         	<div class="row">
@@ -18,27 +11,9 @@
         		<div class="col-md-9 col-sm-8 nopad-right">
                     
                     <h2>Profissões de A a Z</h2>
-                    <br>
-                     <table class="table table-hover">
-                            
-                            <tbody>
-                                <tr>
-                                    <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto.jpg" class="img-responsive"></td>
-                                    <th><p>Aparece em quadros de Cursos ou Oportunidades de Empregos, indica que há Profissões cadastradas no Portal relacionadas aos Cursos ou Oportunidades de Empregos em questão.</p></th>
-                                </tr>
-                                <tr>
-                                    <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto2.jpg" class="img-responsive"></td>
-                                    <th><p>aparece em quadros de Profissões ou Oportunidades de Empregos, indica que há Cursos disponíveis cadastrados no Portal relacionados às Profissões ou Oportunidades de Empregos em questão.</p></th>
-                                </tr>
-                                <tr>
-                                    <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto3.jpg" class="img-responsive"></td>
-                                    <th><p>aparece em quadros de Profissões ou Cursos, indica que há Oportunidades de Emprego disponíveis anunciadas no Portal, relacionadas às Profissões ou Cursos em questão.</p></th>
-                                </tr>
-                            </tbody>
-                        </table>
-                    
+                   	<p>Abaixo encontra-se uma listagem de toda as profissões ordenadas de A a Z.</p>
                     <?php 
-                    
+                    	$posts=query_posts($query_string . '&orderby=title&order=ASC');
                         if ( have_posts() ) : while ( have_posts() ) : the_post(); 
                     
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
