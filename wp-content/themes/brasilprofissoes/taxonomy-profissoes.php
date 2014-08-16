@@ -18,12 +18,6 @@
                         </h2>
                      <table class="table table-hover">
                            
-                            <thead>
-                                <tr>
-                                    <th><h5>Icone</h5></th>
-                                    <th><h5>Legenda</h5></th>
-                                </tr>
-                            </thead>
                             <tbody>
                                 <tr>
                                     <td><img src="<?php echo get_stylesheet_directory_uri() ?>/img/ico_texto.jpg" class="img-responsive"></td>
@@ -45,7 +39,7 @@
                         
                         $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                     ?>
-                        <div class="col-md-3 col-sm-2 lista-profissoes">
+                        <div class="min-pad col-md-3 col-sm-2 lista-profissoes">
                             <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a> 
                         </div>
                         <!--article class="col-md-3 min-pad" style="background: url(<?php echo $src[0]; ?> ) center !important;">
@@ -149,23 +143,23 @@
                     
                     
                     <?php
-                       
-                       /**
-                        * Função que busca os posts de Cursos e os lista abaixo
-                        */
-                    
-                           //Argumentos que será utilizado na busca
-                           $args = array(
-                               'post_type' => 'oportunidade',
+					   
+					   /**
+					    * Função que busca os posts de Oportunidades e os lista abaixo
+					    */
+					
+					       //Argumentos que será utilizado na busca
+        				   $args = array(
+        				   	   'post_type' => 'oportunidade',
                                'posts_per_page' => '4',
                                'orderby' => 'rand'
-                           );
+        				   );
 
                             //Instancia a classe de busca do Wordpress e passa os argumentos
-                           $busca = new WP_Query($args);
-                           
-                           
-                           if($busca->have_posts()){
+					       $busca = new WP_Query($args);
+					       
+					       
+					       if($busca->have_posts()){
 
                                 while ($busca->have_posts()){ 
 
@@ -174,9 +168,9 @@
                                     $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( '310', '560' ), true, '' );
                                     
                     ?>
-                                <div class="col-md-3 col-sm-2 lista-profisssoes">
-                                    <a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a> 
-                                </div>
+                                <div class="min-pad col-md-3 col-sm-2 lista-profissoes">
+            						<a href="<?php echo the_permalink(); ?>" class="rel-curso" style="background: url(<?php echo $src[0]; ?> ) center !important;"><p><?php echo get_the_title(); ?></p></a>
+            					</div>
                     <?php    
                                 }
                            }else{
@@ -184,8 +178,7 @@
                                 echo 'Nenhum post foi encontrado.'; 
                            }
                            wp_reset_postdata();
-                    ?>      
-                </div>
+					?>                </div>
             </div>
 
         </div>
